@@ -16,6 +16,9 @@
 		4C5BF32C1C84DE90000EE0E1 /* Mapbox.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 4C5BF32A1C84DE90000EE0E1 /* Mapbox.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		4C5BF32F1C84DEF2000EE0E1 /* bright-v8-local.json in Resources */ = {isa = PBXBuildFile; fileRef = 4C5BF32E1C84DEF2000EE0E1 /* bright-v8-local.json */; };
 		4C5BF3311C84DF01000EE0E1 /* osm2vectortiles-header.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 4C5BF3301C84DF01000EE0E1 /* osm2vectortiles-header.jpg */; };
+		D71B679A1C9C827300C6AA6A /* glyphs in Resources */ = {isa = PBXBuildFile; fileRef = D71B67971C9C827300C6AA6A /* glyphs */; };
+		D71B679B1C9C827300C6AA6A /* sprites in Resources */ = {isa = PBXBuildFile; fileRef = D71B67981C9C827300C6AA6A /* sprites */; };
+		D71B679C1C9C827300C6AA6A /* v1.json in Resources */ = {isa = PBXBuildFile; fileRef = D71B67991C9C827300C6AA6A /* v1.json */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -43,6 +46,10 @@
 		4C5BF32A1C84DE90000EE0E1 /* Mapbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Mapbox.framework; sourceTree = "<group>"; };
 		4C5BF32E1C84DEF2000EE0E1 /* bright-v8-local.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "bright-v8-local.json"; sourceTree = "<group>"; };
 		4C5BF3301C84DF01000EE0E1 /* osm2vectortiles-header.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "osm2vectortiles-header.jpg"; sourceTree = "<group>"; };
+		D71B67971C9C827300C6AA6A /* glyphs */ = {isa = PBXFileReference; lastKnownFileType = folder; path = glyphs; sourceTree = "<group>"; };
+		D71B67981C9C827300C6AA6A /* sprites */ = {isa = PBXFileReference; lastKnownFileType = folder; path = sprites; sourceTree = "<group>"; };
+		D71B67991C9C827300C6AA6A /* v1.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = v1.json; sourceTree = "<group>"; };
+		D71B67A41CA0946700C6AA6A /* geography-class.mbtiles */ = {isa = PBXFileReference; lastKnownFileType = file; path = "geography-class.mbtiles"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,6 +84,8 @@
 		4C5BF3171C84DDF5000EE0E1 /* OSM2VectorTiles */ = {
 			isa = PBXGroup;
 			children = (
+				D71B67A11CA08A0A00C6AA6A /* Resources */,
+				D71B67991C9C827300C6AA6A /* v1.json */,
 				4C5BF32E1C84DEF2000EE0E1 /* bright-v8-local.json */,
 				4C5BF3301C84DF01000EE0E1 /* osm2vectortiles-header.jpg */,
 				4C5BF3181C84DDF5000EE0E1 /* AppDelegate.swift */,
@@ -87,6 +96,16 @@
 				4C5BF3241C84DDF5000EE0E1 /* Info.plist */,
 			);
 			path = OSM2VectorTiles;
+			sourceTree = "<group>";
+		};
+		D71B67A11CA08A0A00C6AA6A /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				D71B67A41CA0946700C6AA6A /* geography-class.mbtiles */,
+				D71B67981C9C827300C6AA6A /* sprites */,
+				D71B67971C9C827300C6AA6A /* glyphs */,
+			);
+			name = Resources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -152,7 +171,10 @@
 				4C5BF3231C84DDF5000EE0E1 /* LaunchScreen.storyboard in Resources */,
 				4C5BF3201C84DDF5000EE0E1 /* Assets.xcassets in Resources */,
 				4C5BF31E1C84DDF5000EE0E1 /* Main.storyboard in Resources */,
+				D71B679B1C9C827300C6AA6A /* sprites in Resources */,
 				4C5BF32F1C84DEF2000EE0E1 /* bright-v8-local.json in Resources */,
+				D71B679C1C9C827300C6AA6A /* v1.json in Resources */,
+				D71B679A1C9C827300C6AA6A /* glyphs in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -322,6 +344,7 @@
 				4C5BF3291C84DDF5000EE0E1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
