@@ -3,12 +3,12 @@
     "name": "Bright",
     "sources": {
         "mapbox": {
-            "url": "http://osm2vectortiles.tileserver.com/v1.json",
+            "url": "asset://v1.json",
             "type": "vector"
         }
     },
-    "sprite": "http://klokantech.github.io/osm2vectortiles-gl-styles/sprites/bright-v8",
-    "glyphs": "http://klokantech.github.io/osm2vectortiles-gl-styles/glyphs/{fontstack}/{range}.pbf",
+    "sprite": "asset://sprites/bright-v8",
+    "glyphs": "asset://glyphs/{fontstack}/{range}.pbf",
     "layers": [
         {
             "id": "background",
