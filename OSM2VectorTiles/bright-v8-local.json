@@ -5,6 +5,14 @@
         "mapbox": {
             "url": "asset://v1.json",
             "type": "vector"
+        },
+        "yourTileLayer": {
+            "url": "asset://geography-class-local.json",
+            "type": "raster",
+            "tiles": [
+                      "asset://geography-class/{z}/{x}/{y}.png"
+                      ],
+            "tileSize": 256
         }
     },
     "sprite": "asset://sprites/bright-v8",
@@ -2789,6 +2797,19 @@
                 "text-halo-blur": 1
             },
             "source-layer": "country_label"
+        },
+        {
+           "minzoom": 0,
+           "maxzoom": 8,
+           "type": "raster",
+           "paint": {
+           },
+           "layout": {
+               "visibility": "visible"
+           },
+           "id": "yourTileLayer",
+           "source": "yourTileLayer",
+           "interactive": true
         }
     ]
 }

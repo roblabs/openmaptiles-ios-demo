@@ -20,6 +20,7 @@
 		D71B679B1C9C827300C6AA6A /* sprites in Resources */ = {isa = PBXBuildFile; fileRef = D71B67981C9C827300C6AA6A /* sprites */; };
 		D71B679C1C9C827300C6AA6A /* v1.json in Resources */ = {isa = PBXBuildFile; fileRef = D71B67991C9C827300C6AA6A /* v1.json */; };
 		D71B67A61CA094EC00C6AA6A /* geography-class in Resources */ = {isa = PBXBuildFile; fileRef = D71B67A51CA094EC00C6AA6A /* geography-class */; };
+		D71B67A81CA0979600C6AA6A /* geography-class-local.json in Resources */ = {isa = PBXBuildFile; fileRef = D71B67A71CA0979600C6AA6A /* geography-class-local.json */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -52,6 +53,7 @@
 		D71B67991C9C827300C6AA6A /* v1.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = v1.json; sourceTree = "<group>"; };
 		D71B67A41CA0946700C6AA6A /* geography-class.mbtiles */ = {isa = PBXFileReference; lastKnownFileType = file; path = "geography-class.mbtiles"; sourceTree = "<group>"; };
 		D71B67A51CA094EC00C6AA6A /* geography-class */ = {isa = PBXFileReference; lastKnownFileType = folder; path = "geography-class"; sourceTree = "<group>"; };
+		D71B67A71CA0979600C6AA6A /* geography-class-local.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "geography-class-local.json"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -89,6 +91,7 @@
 				D71B67A11CA08A0A00C6AA6A /* Resources */,
 				D71B67991C9C827300C6AA6A /* v1.json */,
 				4C5BF32E1C84DEF2000EE0E1 /* bright-v8-local.json */,
+				D71B67A71CA0979600C6AA6A /* geography-class-local.json */,
 				4C5BF3301C84DF01000EE0E1 /* osm2vectortiles-header.jpg */,
 				4C5BF3181C84DDF5000EE0E1 /* AppDelegate.swift */,
 				4C5BF31A1C84DDF5000EE0E1 /* ViewController.swift */,
@@ -177,6 +180,7 @@
 				4C5BF31E1C84DDF5000EE0E1 /* Main.storyboard in Resources */,
 				D71B679B1C9C827300C6AA6A /* sprites in Resources */,
 				4C5BF32F1C84DEF2000EE0E1 /* bright-v8-local.json in Resources */,
+				D71B67A81CA0979600C6AA6A /* geography-class-local.json in Resources */,
 				D71B679C1C9C827300C6AA6A /* v1.json in Resources */,
 				D71B679A1C9C827300C6AA6A /* glyphs in Resources */,
 			);

@@ -1,0 +1,17 @@
+{
+	"name": "geography-class",
+	"version": "1.0.0",
+	"description": "",
+	"type": "overlay",
+	"format": "png",
+	"minzoom": 0,
+	"maxzoom": 8,
+	"bounds": [-117.30596604, 32.78617375, -117.21820077, 32.88817706],
+	"scale": "1",
+	"profile": "mercator",
+	"basename": "foo",
+	"tiles": ["asset://geography-class/{z}/{x}/{y}.png"],
+	"tilejson": "2.0.0",
+	"scheme": "xyz"
+}
+
