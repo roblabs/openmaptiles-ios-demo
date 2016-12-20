@@ -14,13 +14,10 @@
 		4C5BF3231C84DDF5000EE0E1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4C5BF3211C84DDF5000EE0E1 /* LaunchScreen.storyboard */; };
 		4C5BF32B1C84DE90000EE0E1 /* Mapbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4C5BF32A1C84DE90000EE0E1 /* Mapbox.framework */; };
 		4C5BF32C1C84DE90000EE0E1 /* Mapbox.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 4C5BF32A1C84DE90000EE0E1 /* Mapbox.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		4C5BF32F1C84DEF2000EE0E1 /* bright-v8-local.json in Resources */ = {isa = PBXBuildFile; fileRef = 4C5BF32E1C84DEF2000EE0E1 /* bright-v8-local.json */; };
-		4C5BF3311C84DF01000EE0E1 /* osm2vectortiles-header.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 4C5BF3301C84DF01000EE0E1 /* osm2vectortiles-header.jpg */; };
 		D71B679A1C9C827300C6AA6A /* glyphs in Resources */ = {isa = PBXBuildFile; fileRef = D71B67971C9C827300C6AA6A /* glyphs */; };
 		D71B679B1C9C827300C6AA6A /* sprites in Resources */ = {isa = PBXBuildFile; fileRef = D71B67981C9C827300C6AA6A /* sprites */; };
-		D71B679C1C9C827300C6AA6A /* v1.json in Resources */ = {isa = PBXBuildFile; fileRef = D71B67991C9C827300C6AA6A /* v1.json */; };
-		D71B67A61CA094EC00C6AA6A /* geography-class in Resources */ = {isa = PBXBuildFile; fileRef = D71B67A51CA094EC00C6AA6A /* geography-class */; };
-		D71B67A81CA0979600C6AA6A /* geography-class-local.json in Resources */ = {isa = PBXBuildFile; fileRef = D71B67A71CA0979600C6AA6A /* geography-class-local.json */; };
+		FD137E021E08E259005C1849 /* styles in Resources */ = {isa = PBXBuildFile; fileRef = FD137E011E08E259005C1849 /* styles */; };
+		FD137E041E08E67E005C1849 /* geography-class.osm2vectortiles in Resources */ = {isa = PBXBuildFile; fileRef = FD137E031E08E67E005C1849 /* geography-class.osm2vectortiles */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -46,14 +43,11 @@
 		4C5BF3221C84DDF5000EE0E1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		4C5BF3241C84DDF5000EE0E1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4C5BF32A1C84DE90000EE0E1 /* Mapbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Mapbox.framework; sourceTree = "<group>"; };
-		4C5BF32E1C84DEF2000EE0E1 /* bright-v8-local.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "bright-v8-local.json"; sourceTree = "<group>"; };
-		4C5BF3301C84DF01000EE0E1 /* osm2vectortiles-header.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "osm2vectortiles-header.jpg"; sourceTree = "<group>"; };
 		D71B67971C9C827300C6AA6A /* glyphs */ = {isa = PBXFileReference; lastKnownFileType = folder; path = glyphs; sourceTree = "<group>"; };
 		D71B67981C9C827300C6AA6A /* sprites */ = {isa = PBXFileReference; lastKnownFileType = folder; path = sprites; sourceTree = "<group>"; };
-		D71B67991C9C827300C6AA6A /* v1.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = v1.json; sourceTree = "<group>"; };
 		D71B67A41CA0946700C6AA6A /* geography-class.mbtiles */ = {isa = PBXFileReference; lastKnownFileType = file; path = "geography-class.mbtiles"; sourceTree = "<group>"; };
-		D71B67A51CA094EC00C6AA6A /* geography-class */ = {isa = PBXFileReference; lastKnownFileType = folder; path = "geography-class"; sourceTree = "<group>"; };
-		D71B67A71CA0979600C6AA6A /* geography-class-local.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "geography-class-local.json"; sourceTree = "<group>"; };
+		FD137E011E08E259005C1849 /* styles */ = {isa = PBXFileReference; lastKnownFileType = folder; path = styles; sourceTree = "<group>"; };
+		FD137E031E08E67E005C1849 /* geography-class.osm2vectortiles */ = {isa = PBXFileReference; lastKnownFileType = folder; path = "geography-class.osm2vectortiles"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -89,10 +83,6 @@
 			isa = PBXGroup;
 			children = (
 				D71B67A11CA08A0A00C6AA6A /* Resources */,
-				D71B67991C9C827300C6AA6A /* v1.json */,
-				4C5BF32E1C84DEF2000EE0E1 /* bright-v8-local.json */,
-				D71B67A71CA0979600C6AA6A /* geography-class-local.json */,
-				4C5BF3301C84DF01000EE0E1 /* osm2vectortiles-header.jpg */,
 				4C5BF3181C84DDF5000EE0E1 /* AppDelegate.swift */,
 				4C5BF31A1C84DDF5000EE0E1 /* ViewController.swift */,
 				4C5BF31C1C84DDF5000EE0E1 /* Main.storyboard */,
@@ -106,8 +96,9 @@
 		D71B67A11CA08A0A00C6AA6A /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				D71B67A51CA094EC00C6AA6A /* geography-class */,
+				FD137E031E08E67E005C1849 /* geography-class.osm2vectortiles */,
 				D71B67A41CA0946700C6AA6A /* geography-class.mbtiles */,
+				FD137E011E08E259005C1849 /* styles */,
 				D71B67981C9C827300C6AA6A /* sprites */,
 				D71B67971C9C827300C6AA6A /* glyphs */,
 			);
@@ -147,6 +138,7 @@
 				TargetAttributes = {
 					4C5BF3141C84DDF5000EE0E1 = {
 						CreatedOnToolsVersion = 7.2.1;
+						DevelopmentTeam = J7V35W7ES8;
 						LastSwiftMigration = 0820;
 					};
 				};
@@ -174,15 +166,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4C5BF3311C84DF01000EE0E1 /* osm2vectortiles-header.jpg in Resources */,
 				4C5BF3231C84DDF5000EE0E1 /* LaunchScreen.storyboard in Resources */,
+				FD137E041E08E67E005C1849 /* geography-class.osm2vectortiles in Resources */,
 				4C5BF3201C84DDF5000EE0E1 /* Assets.xcassets in Resources */,
-				D71B67A61CA094EC00C6AA6A /* geography-class in Resources */,
+				FD137E021E08E259005C1849 /* styles in Resources */,
 				4C5BF31E1C84DDF5000EE0E1 /* Main.storyboard in Resources */,
 				D71B679B1C9C827300C6AA6A /* sprites in Resources */,
-				4C5BF32F1C84DEF2000EE0E1 /* bright-v8-local.json in Resources */,
-				D71B67A81CA0979600C6AA6A /* geography-class-local.json in Resources */,
-				D71B679C1C9C827300C6AA6A /* v1.json in Resources */,
 				D71B679A1C9C827300C6AA6A /* glyphs in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -313,13 +302,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = J7V35W7ES8;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)",
 				);
 				INFOPLIST_FILE = OSM2VectorTiles/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.klokantech.OSM2VectorTiles;
+				PRODUCT_BUNDLE_IDENTIFIER = com.roblabs.klokantech.OSM2VectorTiles;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
 			};
@@ -329,13 +319,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = J7V35W7ES8;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)",
 				);
 				INFOPLIST_FILE = OSM2VectorTiles/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.klokantech.OSM2VectorTiles;
+				PRODUCT_BUNDLE_IDENTIFIER = com.roblabs.klokantech.OSM2VectorTiles;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
 			};

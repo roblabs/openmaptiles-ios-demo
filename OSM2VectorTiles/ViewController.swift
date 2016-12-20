@@ -17,7 +17,7 @@ class ViewController: UIViewController {
     
     override func viewDidLoad() {
         
-        mapView.logoView.hidden = true;
+        mapView.logoView.isHidden = true;
         
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
