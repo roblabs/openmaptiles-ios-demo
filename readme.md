@@ -1,6 +1,10 @@
 Building upon https://github.com/klokantech/osm2vectortiles-ios, now an iOS app
-can be built to have local raster data, glyphs and sprites.
+can be built to have local vector data, styles, glyphs and sprites.
 
-Example using the Geography Class data from the TileMill sample, and overlaying the .mbtiles raster (as PNG), over a vector layer.
+Features
+
+* 100% local data (notice in the animation that WiFi is turned off at the beginning of the demo)
+* Vector data built using http://OSM2VectorTiles.org
+* Styling of the countries is from https://github.com/klokantech/mapbox-gl-js-offline-example
 
 ![geography-class](geography-class.gif)
