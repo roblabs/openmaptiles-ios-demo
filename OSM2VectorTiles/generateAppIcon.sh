@@ -85,7 +85,7 @@ cat > "$iconPath/Contents.json" << EOF
       ,"filename" : "Icon-Small@3x.png"
     },
     {
-      "idiom" : "iphone",
+      "idiom" : "ipad",
       "scale" : "2x",
       "size" : "83.5x83.5"
       ,"filename" : "Icon-83.5@2x.png"
