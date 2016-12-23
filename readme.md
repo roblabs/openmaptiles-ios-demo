@@ -8,3 +8,5 @@ Features
 * Styling of the countries is from https://github.com/klokantech/mapbox-gl-js-offline-example
 
 ![geography-class](geography-class.gif)
+
+* (QuickTime has a bug when screen recording; as it still shows WiFi service when is on, when it indeed is off)
