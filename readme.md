@@ -9,8 +9,16 @@ can be built to have local vector data, styles, glyphs and sprites.
 
 ## Build
 
-* In Terminal, run `pod install`
+* In Terminal, run
+~~~
+# cd <same directory as the `Podfile`>
+pod install
+~~~
+
 * Then open the Workspace `OSM2VectorTiles.xcworkspace`
+~~~
+open OSM2VectorTiles.xcworkspace
+~~~
 
 ## Architecture
 
@@ -33,3 +41,10 @@ can be built to have local vector data, styles, glyphs and sprites.
 ![geography-class](geography-class.gif)
 
 * (QuickTime has a bug when screen recording; as it still shows WiFi service is on, when it indeed is off)
+
+
+### Change Log
+
+* Nov 19, 2019 — Upgrade to Xcode 10.1
+* Jan 30, 2017 — upgrade to Mapbox 3.4.1 & Podfile
+* 2016 — Initial Version
