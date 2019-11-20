@@ -45,6 +45,7 @@
 		D71B67971C9C827300C6AA6A /* glyphs */ = {isa = PBXFileReference; lastKnownFileType = folder; path = glyphs; sourceTree = "<group>"; };
 		D71B67981C9C827300C6AA6A /* sprites */ = {isa = PBXFileReference; lastKnownFileType = folder; path = sprites; sourceTree = "<group>"; };
 		D71B67A41CA0946700C6AA6A /* geography-class.mbtiles */ = {isa = PBXFileReference; lastKnownFileType = file; path = "geography-class.mbtiles"; sourceTree = "<group>"; };
+		D76B160B2384D78C00887BDA /* ci.sh */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; path = ci.sh; sourceTree = "<group>"; };
 		F7092338A8BCB876F335F99E /* libPods-OSM2VectorTiles.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-OSM2VectorTiles.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		FD137E011E08E259005C1849 /* styles */ = {isa = PBXFileReference; lastKnownFileType = folder; path = styles; sourceTree = "<group>"; };
 		FD137E031E08E67E005C1849 /* geography-class.osm2vectortiles */ = {isa = PBXFileReference; lastKnownFileType = folder; path = "geography-class.osm2vectortiles"; sourceTree = "<group>"; };
@@ -75,6 +76,7 @@
 			isa = PBXGroup;
 			children = (
 				FD184C7E1E3FBAEE007CC408 /* readme.md */,
+				D76B160C2384D79D00887BDA /* Continuous-Integration */,
 				4C5BF3171C84DDF5000EE0E1 /* OSM2VectorTiles */,
 				4C5BF3161C84DDF5000EE0E1 /* Products */,
 				6B2F405E70F64141AFC8C490 /* Pods */,
@@ -125,6 +127,14 @@
 			name = Resources;
 			sourceTree = "<group>";
 		};
+		D76B160C2384D79D00887BDA /* Continuous-Integration */ = {
+			isa = PBXGroup;
+			children = (
+				D76B160B2384D78C00887BDA /* ci.sh */,
+			);
+			path = "Continuous-Integration";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -165,7 +175,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 4C5BF3101C84DDF5000EE0E1 /* Build configuration list for PBXProject "OSM2VectorTiles" */;
+			buildConfigurationList = 4C5BF3101C84DDF5000EE0E1 /* Build configuration list for PBXProject "openmaptiles-ios-demo" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -420,7 +430,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		4C5BF3101C84DDF5000EE0E1 /* Build configuration list for PBXProject "OSM2VectorTiles" */ = {
+		4C5BF3101C84DDF5000EE0E1 /* Build configuration list for PBXProject "openmaptiles-ios-demo" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				4C5BF3251C84DDF5000EE0E1 /* Debug */,
