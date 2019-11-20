@@ -15,9 +15,9 @@ can be built to have local vector data, styles, glyphs and sprites.
 pod install
 ~~~
 
-* Then open the Workspace `OSM2VectorTiles.xcworkspace`
+* Then open the Workspace `openmaptiles-ios-demo.xcworkspace`
 ~~~
-open OSM2VectorTiles.xcworkspace
+open openmaptiles-ios-demo.xcworkspace
 ~~~
 
 ## Architecture

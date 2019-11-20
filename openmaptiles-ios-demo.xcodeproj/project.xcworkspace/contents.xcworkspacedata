@@ -2,6 +2,6 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "self:OSM2VectorTiles.xcodeproj">
+      location = "self:openmaptiles-ios-demo.xcodeproj">
    </FileRef>
 </Workspace>
