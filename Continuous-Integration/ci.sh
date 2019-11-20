@@ -45,7 +45,10 @@ echo $PATH
 export PATH=/usr/local/bin:.:$PATH
 echo $PATH
 
+date
 pod --version
 pod install
+wait
+date
 
 open $PREBUILD_LOG
