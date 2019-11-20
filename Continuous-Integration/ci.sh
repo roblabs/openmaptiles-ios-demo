@@ -1,8 +1,7 @@
 #! /bin/sh
 # Add to To scheme with these commands
-  # sh ${PROJECT_DIR}/../Continuous-Integration/ci.sh
+  # sh ${PROJECT_DIR}/Continuous-Integration/ci.sh
   
-export LANG=en_US.UTF-8   # to avoid Pod WARNING: CocoaPods requires your terminal to be using UTF-8 encoding.
 
 # Output log name
 export PREBUILD_LOG=${PROJECT_DIR}/prebuild.log
@@ -30,8 +29,14 @@ fi
 
 # Xcode Pre-build scripts goto stdError, so use this to capture
 exec > $PREBUILD_LOG 2>&1
-echo PREBUILD_LOG = $PREBUILD_LOG
 
+export LANG=en_US.UTF-8   # to avoid Pod WARNING: CocoaPods requires your terminal to be using UTF-8 encoding.
+date
+echo DEVELOPMENT_TEAM = $DEVELOPMENT_TEAM
+echo PREBUILD_LOG = $PREBUILD_LOG
+sw_vers
+/usr/bin/xcodebuild -version
+system_profiler SPDeveloperToolsDataType
 echo PROJECT_DIR = ${PROJECT_DIR}
 cd ${PROJECT_DIR}
 
@@ -39,9 +44,7 @@ set -v
 echo $PATH
 export PATH=/usr/local/bin:.:$PATH
 echo $PATH
-sw_vers
-/usr/bin/xcodebuild -version
-system_profiler SPDeveloperToolsDataType
+
 pod --version
 pod install
 
