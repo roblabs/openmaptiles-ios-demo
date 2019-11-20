@@ -17,7 +17,6 @@
 		EDB911C48A286AFBD79B8F6F /* libPods-OSM2VectorTiles.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F7092338A8BCB876F335F99E /* libPods-OSM2VectorTiles.a */; };
 		FD137E021E08E259005C1849 /* styles in Resources */ = {isa = PBXBuildFile; fileRef = FD137E011E08E259005C1849 /* styles */; };
 		FD137E041E08E67E005C1849 /* geography-class.osm2vectortiles in Resources */ = {isa = PBXBuildFile; fileRef = FD137E031E08E67E005C1849 /* geography-class.osm2vectortiles */; };
-		FD184C7F1E3FBAEE007CC408 /* readme.md in Sources */ = {isa = PBXBuildFile; fileRef = FD184C7E1E3FBAEE007CC408 /* readme.md */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -248,7 +247,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				4C5BF31B1C84DDF5000EE0E1 /* ViewController.swift in Sources */,
-				FD184C7F1E3FBAEE007CC408 /* readme.md in Sources */,
 				4C5BF3191C84DDF5000EE0E1 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -393,7 +391,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.roblabs.papermaps.GeographyClass;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_SWIFT3_OBJC_INFERENCE = On;
+				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
 				SWIFT_VERSION = 4.2;
 			};
 			name = Debug;
@@ -412,7 +410,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.roblabs.papermaps.GeographyClass;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_SWIFT3_OBJC_INFERENCE = On;
+				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
 				SWIFT_VERSION = 4.2;
 			};
 			name = Release;
