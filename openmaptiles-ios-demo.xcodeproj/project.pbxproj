@@ -394,6 +394,7 @@
 			baseConfigurationReference = CE0D03C0A14EFC10163F9E10 /* Pods-OSM2VectorTiles.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CURRENT_PROJECT_VERSION = "${XCS_INTEGRATION_NUMBER}0";
 				DEVELOPMENT_TEAM = J7V35W7ES8;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -401,6 +402,7 @@
 				);
 				INFOPLIST_FILE = OSM2VectorTiles/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				MARKETING_VERSION = "1.341.${XCS_INTEGRATION_NUMBER}0";
 				PRODUCT_BUNDLE_IDENTIFIER = com.roblabs.papermaps.GeographyClass;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
@@ -413,6 +415,7 @@
 			baseConfigurationReference = 56A6D8C99DAD39B16F09E680 /* Pods-OSM2VectorTiles.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CURRENT_PROJECT_VERSION = "${XCS_INTEGRATION_NUMBER}0";
 				DEVELOPMENT_TEAM = J7V35W7ES8;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -420,6 +423,7 @@
 				);
 				INFOPLIST_FILE = OSM2VectorTiles/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				MARKETING_VERSION = "1.341.${XCS_INTEGRATION_NUMBER}0";
 				PRODUCT_BUNDLE_IDENTIFIER = com.roblabs.papermaps.GeographyClass;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
