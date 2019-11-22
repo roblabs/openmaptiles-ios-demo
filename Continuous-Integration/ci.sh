@@ -7,13 +7,19 @@
 export PREBUILD_LOG=${PROJECT_DIR}/prebuild.log
 rm -f $PREBUILD_LOG
 
+# check if we are usings Xcode Server Bots integration
+if [ "$XCS" == 1 ]
+then
+  export PREBUILD_LOG=${PROJECT_DIR}/prebuild.${XCS_BOT_TINY_ID}.${XCS_INTEGRATION_NUMBER}.log
+fi
+
 # Xcode Pre-build scripts goto stdError, so use this to capture
 exec > $PREBUILD_LOG 2>&1
 
 export LANG=en_US.UTF-8   # to avoid Pod WARNING: CocoaPods requires your terminal to be using UTF-8 encoding.
 date
 
-# if Xcode Server, then use the integration number
+# if Xcode Server, then log several key XCS_ environment variables
 if [ "$XCS" == 1 ]
 then
   export PREBUILD_LOG=${PROJECT_DIR}/prebuild.${XCS_BOT_TINY_ID}.${XCS_INTEGRATION_NUMBER}.log
