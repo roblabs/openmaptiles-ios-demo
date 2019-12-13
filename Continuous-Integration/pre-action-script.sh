@@ -1,6 +1,6 @@
 #! /bin/sh
 # Add to To scheme with these commands
-  # sh ${PROJECT_DIR}/Continuous-Integration/ci.sh
+  # sh ${PROJECT_DIR}/Continuous-Integration/pre-action-script.sh
   
 
 # Output log name
