@@ -470,7 +470,7 @@
 				);
 				INFOPLIST_FILE = OSM2VectorTiles/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				MARKETING_VERSION = "1.341.${XCS_INTEGRATION_NUMBER}0";
+				MARKETING_VERSION = "1.550.${XCS_INTEGRATION_NUMBER}0";
 				PRODUCT_BUNDLE_IDENTIFIER = com.roblabs.papermaps.GeographyClass;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
@@ -491,7 +491,7 @@
 				);
 				INFOPLIST_FILE = OSM2VectorTiles/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				MARKETING_VERSION = "1.341.${XCS_INTEGRATION_NUMBER}0";
+				MARKETING_VERSION = "1.550.${XCS_INTEGRATION_NUMBER}0";
 				PRODUCT_BUNDLE_IDENTIFIER = com.roblabs.papermaps.GeographyClass;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
