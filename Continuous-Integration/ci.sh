@@ -16,7 +16,7 @@ fi
 # Xcode Pre-build scripts goto stdError, so use this to capture
 exec > $PREBUILD_LOG 2>&1
 
-export LANG=en_US.UTF-8   # to avoid Pod WARNING: CocoaPods requires your terminal to be using UTF-8 encoding.
+export LANG=en_US.UTF-8
 date
 
 # if Xcode Server, then log several key XCS_ environment variables
@@ -62,8 +62,9 @@ export PATH=/usr/local/bin:.:$PATH
 echo $PATH
 
 date
-pod --version
-pod install
+which carthage
+carthage version
+carthage update
 wait
 date
 

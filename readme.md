@@ -11,8 +11,8 @@ can be built to have local vector data, styles, glyphs and sprites.
 
 * In Terminal, run
 ~~~
-# cd <same directory as the `Podfile`>
-pod install
+# cd <same directory as the `Cartfile`>
+carthage update
 ~~~
 
 * Then open the Workspace `openmaptiles-ios-demo.xcworkspace`
@@ -45,6 +45,7 @@ open openmaptiles-ios-demo.xcworkspace
 
 ### Change Log
 
+* Dec 13, 2019 — Move from Cocoapods to Carthage.  Upgrade to Xcode 11.3.  Uprade to Mapbox 5.5
 * Nov 19, 2019 — Upgrade to Xcode 10.1
 * Jan 30, 2017 — upgrade to Mapbox 3.4.1 & Podfile
 * 2016 — Initial Version

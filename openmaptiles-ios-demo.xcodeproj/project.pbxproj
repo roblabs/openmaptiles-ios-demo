@@ -14,7 +14,8 @@
 		4C5BF3231C84DDF5000EE0E1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4C5BF3211C84DDF5000EE0E1 /* LaunchScreen.storyboard */; };
 		D71B679A1C9C827300C6AA6A /* glyphs in Resources */ = {isa = PBXBuildFile; fileRef = D71B67971C9C827300C6AA6A /* glyphs */; };
 		D71B679B1C9C827300C6AA6A /* sprites in Resources */ = {isa = PBXBuildFile; fileRef = D71B67981C9C827300C6AA6A /* sprites */; };
-		EDB911C48A286AFBD79B8F6F /* libPods-OSM2VectorTiles.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F7092338A8BCB876F335F99E /* libPods-OSM2VectorTiles.a */; };
+		D753957023A43F6600CF4530 /* Mapbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D753956F23A43F6600CF4530 /* Mapbox.framework */; };
+		D753957123A43F6600CF4530 /* Mapbox.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = D753956F23A43F6600CF4530 /* Mapbox.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		FD137E021E08E259005C1849 /* styles in Resources */ = {isa = PBXBuildFile; fileRef = FD137E011E08E259005C1849 /* styles */; };
 		FD137E041E08E67E005C1849 /* geography-class.osm2vectortiles in Resources */ = {isa = PBXBuildFile; fileRef = FD137E031E08E67E005C1849 /* geography-class.osm2vectortiles */; };
 /* End PBXBuildFile section */
@@ -26,6 +27,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
+				D753957123A43F6600CF4530 /* Mapbox.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -40,13 +42,11 @@
 		4C5BF31F1C84DDF5000EE0E1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4C5BF3221C84DDF5000EE0E1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		4C5BF3241C84DDF5000EE0E1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		56A6D8C99DAD39B16F09E680 /* Pods-OSM2VectorTiles.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OSM2VectorTiles.release.xcconfig"; path = "Pods/Target Support Files/Pods-OSM2VectorTiles/Pods-OSM2VectorTiles.release.xcconfig"; sourceTree = "<group>"; };
-		CE0D03C0A14EFC10163F9E10 /* Pods-OSM2VectorTiles.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OSM2VectorTiles.debug.xcconfig"; path = "Pods/Target Support Files/Pods-OSM2VectorTiles/Pods-OSM2VectorTiles.debug.xcconfig"; sourceTree = "<group>"; };
 		D71B67971C9C827300C6AA6A /* glyphs */ = {isa = PBXFileReference; lastKnownFileType = folder; path = glyphs; sourceTree = "<group>"; };
 		D71B67981C9C827300C6AA6A /* sprites */ = {isa = PBXFileReference; lastKnownFileType = folder; path = sprites; sourceTree = "<group>"; };
 		D71B67A41CA0946700C6AA6A /* geography-class.mbtiles */ = {isa = PBXFileReference; lastKnownFileType = file; path = "geography-class.mbtiles"; sourceTree = "<group>"; };
+		D753956F23A43F6600CF4530 /* Mapbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Mapbox.framework; path = Carthage/Build/iOS/Mapbox.framework; sourceTree = "<group>"; };
 		D76B160B2384D78C00887BDA /* ci.sh */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; path = ci.sh; sourceTree = "<group>"; };
-		F7092338A8BCB876F335F99E /* libPods-OSM2VectorTiles.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-OSM2VectorTiles.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		FD137E011E08E259005C1849 /* styles */ = {isa = PBXFileReference; lastKnownFileType = folder; path = styles; sourceTree = "<group>"; };
 		FD137E031E08E67E005C1849 /* geography-class.osm2vectortiles */ = {isa = PBXFileReference; lastKnownFileType = folder; path = "geography-class.osm2vectortiles"; sourceTree = "<group>"; };
 		FD184C7E1E3FBAEE007CC408 /* readme.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = readme.md; sourceTree = "<group>"; };
@@ -57,7 +57,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EDB911C48A286AFBD79B8F6F /* libPods-OSM2VectorTiles.a in Frameworks */,
+				D753957023A43F6600CF4530 /* Mapbox.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -67,7 +67,7 @@
 		2E6C96FF13619EF1C4AFECF5 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				F7092338A8BCB876F335F99E /* libPods-OSM2VectorTiles.a */,
+				D753956F23A43F6600CF4530 /* Mapbox.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -79,7 +79,6 @@
 				D76B160C2384D79D00887BDA /* Continuous-Integration */,
 				4C5BF3171C84DDF5000EE0E1 /* OSM2VectorTiles */,
 				4C5BF3161C84DDF5000EE0E1 /* Products */,
-				6B2F405E70F64141AFC8C490 /* Pods */,
 				2E6C96FF13619EF1C4AFECF5 /* Frameworks */,
 			);
 			sourceTree = "<group>";
@@ -104,15 +103,6 @@
 				4C5BF3241C84DDF5000EE0E1 /* Info.plist */,
 			);
 			path = OSM2VectorTiles;
-			sourceTree = "<group>";
-		};
-		6B2F405E70F64141AFC8C490 /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				CE0D03C0A14EFC10163F9E10 /* Pods-OSM2VectorTiles.debug.xcconfig */,
-				56A6D8C99DAD39B16F09E680 /* Pods-OSM2VectorTiles.release.xcconfig */,
-			);
-			name = Pods;
 			sourceTree = "<group>";
 		};
 		D71B67A11CA08A0A00C6AA6A /* Resources */ = {
@@ -142,12 +132,10 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 4C5BF3271C84DDF5000EE0E1 /* Build configuration list for PBXNativeTarget "OSM2VectorTiles" */;
 			buildPhases = (
-				4C10D4BB072599F2A7504706 /* [CP] Check Pods Manifest.lock */,
 				4C5BF3111C84DDF5000EE0E1 /* Sources */,
 				4C5BF3121C84DDF5000EE0E1 /* Frameworks */,
 				4C5BF3131C84DDF5000EE0E1 /* Resources */,
 				4C5BF32D1C84DE90000EE0E1 /* Embed Frameworks */,
-				5E70D114147A25A8F86B5491 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -209,47 +197,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
-
-/* Begin PBXShellScriptBuildPhase section */
-		4C10D4BB072599F2A7504706 /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-OSM2VectorTiles-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		5E70D114147A25A8F86B5491 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-OSM2VectorTiles/Pods-OSM2VectorTiles-frameworks.sh",
-				"${PODS_ROOT}/Mapbox-iOS-SDK/dynamic/Mapbox.framework",
-				"${PODS_ROOT}/Mapbox-iOS-SDK/dynamic/Mapbox.framework.dSYM",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputPaths = (
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Mapbox.framework",
-				"${DWARF_DSYM_FOLDER_PATH}/Mapbox.framework.dSYM",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-OSM2VectorTiles/Pods-OSM2VectorTiles-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		4C5BF3111C84DDF5000EE0E1 /* Sources */ = {
@@ -391,7 +338,6 @@
 		};
 		4C5BF3281C84DDF5000EE0E1 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = CE0D03C0A14EFC10163F9E10 /* Pods-OSM2VectorTiles.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CURRENT_PROJECT_VERSION = "${XCS_INTEGRATION_NUMBER}0";
@@ -399,6 +345,7 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
 				);
 				INFOPLIST_FILE = OSM2VectorTiles/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -412,7 +359,6 @@
 		};
 		4C5BF3291C84DDF5000EE0E1 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 56A6D8C99DAD39B16F09E680 /* Pods-OSM2VectorTiles.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CURRENT_PROJECT_VERSION = "${XCS_INTEGRATION_NUMBER}0";
@@ -420,6 +366,7 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
 				);
 				INFOPLIST_FILE = OSM2VectorTiles/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
