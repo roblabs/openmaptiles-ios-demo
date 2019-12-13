@@ -9,11 +9,15 @@ can be built to have local vector data, styles, glyphs and sprites.
 
 ## Build
 
+* Install `carthage` via https://github.com/Carthage/Carthage
 * In Terminal, run
 ~~~
 # cd <same directory as the `Cartfile`>
 carthage update
 ~~~
+
+* Following notes from https://docs.mapbox.com/help/troubleshooting/private-access-token-android-and-ios/
+> Create a new plain text file containing your access token, named either .mapbox or mapbox. To avoid accidentally committing this file to an open-source project, either you can save it to a location outside your project's version-controlled directory, or you can add this file to your project’s .gitignore file.
 
 * Then open the Workspace `openmaptiles-ios-demo.xcworkspace`
 ~~~
@@ -45,7 +49,7 @@ open openmaptiles-ios-demo.xcworkspace
 
 ### Change Log
 
-* Dec 13, 2019 — Move from Cocoapods to Carthage.  Upgrade to Xcode 11.3.  Uprade to Mapbox 5.5
+* Dec 13, 2019 — Move from Cocoapods to Carthage.  Upgrade to Xcode 11.3.  Uprade to Mapbox 5.5.  Add local, private Mapbox Token.
 * Nov 19, 2019 — Upgrade to Xcode 10.1
 * Jan 30, 2017 — upgrade to Mapbox 3.4.1 & Podfile
 * 2016 — Initial Version

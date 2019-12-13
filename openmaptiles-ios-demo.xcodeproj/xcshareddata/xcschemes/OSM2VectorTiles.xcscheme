@@ -46,6 +46,16 @@
       selectedLauncherIdentifier = "Xcode.DebuggerFoundation.Launcher.LLDB"
       shouldUseLaunchSchemeArgsEnv = "YES">
       <Testables>
+         <TestableReference
+            skipped = "NO">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "D74D7ACD23A4477000BD8450"
+               BuildableName = "OSM2VectorTilesTests.xctest"
+               BlueprintName = "OSM2VectorTilesTests"
+               ReferencedContainer = "container:openmaptiles-ios-demo.xcodeproj">
+            </BuildableReference>
+         </TestableReference>
       </Testables>
    </TestAction>
    <LaunchAction
