@@ -10,23 +10,7 @@
             ActionType = "Xcode.IDEStandardExecutionActionsCore.ExecutionActionType.ShellScriptAction">
             <ActionContent
                title = "metadata.sh"
-               scriptText = "sh ${PROJECT_DIR}/Continuous-Integration/metadata.sh&#10;">
-               <EnvironmentBuildable>
-                  <BuildableReference
-                     BuildableIdentifier = "primary"
-                     BlueprintIdentifier = "4C5BF3141C84DDF5000EE0E1"
-                     BuildableName = "OSM2VectorTiles.app"
-                     BlueprintName = "OSM2VectorTiles"
-                     ReferencedContainer = "container:openmaptiles-ios-demo.xcodeproj">
-                  </BuildableReference>
-               </EnvironmentBuildable>
-            </ActionContent>
-         </ExecutionAction>
-         <ExecutionAction
-            ActionType = "Xcode.IDEStandardExecutionActionsCore.ExecutionActionType.ShellScriptAction">
-            <ActionContent
-               title = "carthage.sh"
-               scriptText = "sh ${PROJECT_DIR}/Continuous-Integration/carthage.sh&#10;">
+               scriptText = "sh ${PROJECT_DIR}/Continuous-Integration/pre-action-script.sh&#10;">
                <EnvironmentBuildable>
                   <BuildableReference
                      BuildableIdentifier = "primary"

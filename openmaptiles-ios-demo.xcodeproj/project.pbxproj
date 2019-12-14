@@ -146,8 +146,8 @@
 		D76B160C2384D79D00887BDA /* Continuous-Integration */ = {
 			isa = PBXGroup;
 			children = (
-				D79CCE4E23A473AD00379BA5 /* carthage.sh */,
 				D79CCE5023A4741300379BA5 /* metadata.sh */,
+				D79CCE4E23A473AD00379BA5 /* carthage.sh */,
 				D74D7ADB23A4530A00BD8450 /* pre-action-script.sh */,
 				D74D7ADA23A4530900BD8450 /* post-action-script.sh */,
 			);

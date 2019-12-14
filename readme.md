@@ -12,7 +12,18 @@ can be built to have local vector data, styles, glyphs and sprites.
 * Install `carthage` via https://github.com/Carthage/Carthage
 * In Terminal, run
 ~~~
+# Build
 xcodebuild -scheme OSM2VectorTiles build
+
+# Test
+xcodebuild -scheme OSM2VectorTiles test \
+  -destination 'platform=iOS Simulator,name=iPhone SE'
+  
+# Test without building
+xcodebuild -scheme OSM2VectorTiles test-without-building   \
+  -destination 'platform=iOS Simulator,name=iPhone SE'     \
+  -destination 'platform=iOS Simulator,name=iPhone 11 Pro' \
+  -destination 'platform=iOS,name=iPhone 6' \
 ~~~
 
 * Following notes from https://docs.mapbox.com/help/troubleshooting/private-access-token-android-and-ios/
