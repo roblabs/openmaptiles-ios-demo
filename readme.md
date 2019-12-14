@@ -12,8 +12,7 @@ can be built to have local vector data, styles, glyphs and sprites.
 * Install `carthage` via https://github.com/Carthage/Carthage
 * In Terminal, run
 ~~~
-# cd <same directory as the `Cartfile`>
-carthage update
+xcodebuild -scheme OSM2VectorTiles build
 ~~~
 
 * Following notes from https://docs.mapbox.com/help/troubleshooting/private-access-token-android-and-ios/
