@@ -62,6 +62,8 @@
 		D79CCE4423A469F700379BA5 /* OSM2VectorTilesUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = OSM2VectorTilesUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D79CCE4623A469F700379BA5 /* OSM2VectorTilesUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OSM2VectorTilesUITests.swift; sourceTree = "<group>"; };
 		D79CCE4823A469F700379BA5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D79CCE4E23A473AD00379BA5 /* carthage.sh */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; path = carthage.sh; sourceTree = "<group>"; };
+		D79CCE5023A4741300379BA5 /* metadata.sh */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; path = metadata.sh; sourceTree = "<group>"; };
 		FD137E011E08E259005C1849 /* styles */ = {isa = PBXFileReference; lastKnownFileType = folder; path = styles; sourceTree = "<group>"; };
 		FD137E031E08E67E005C1849 /* geography-class.osm2vectortiles */ = {isa = PBXFileReference; lastKnownFileType = folder; path = "geography-class.osm2vectortiles"; sourceTree = "<group>"; };
 		FD184C7E1E3FBAEE007CC408 /* readme.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = readme.md; sourceTree = "<group>"; };
@@ -144,6 +146,8 @@
 		D76B160C2384D79D00887BDA /* Continuous-Integration */ = {
 			isa = PBXGroup;
 			children = (
+				D79CCE4E23A473AD00379BA5 /* carthage.sh */,
+				D79CCE5023A4741300379BA5 /* metadata.sh */,
 				D74D7ADB23A4530A00BD8450 /* pre-action-script.sh */,
 				D74D7ADA23A4530900BD8450 /* post-action-script.sh */,
 			);

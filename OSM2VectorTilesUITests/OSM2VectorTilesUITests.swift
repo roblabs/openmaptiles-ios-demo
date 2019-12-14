@@ -61,7 +61,10 @@ class OSM2VectorTilesUITests: XCTestCase {
 
     func testExample() {
         // UI tests must launch the application that they test.
+
         let app = XCUIApplication()
+
+        /// Place a breakpoint on the next line, then in the debugger issue the command `po app` and inspect.  E.g., `app.otherElements["Map"]``
         app.launch()
 
         // Use recording to get started writing UI tests.
