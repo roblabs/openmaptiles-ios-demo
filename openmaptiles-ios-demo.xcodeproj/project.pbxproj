@@ -14,15 +14,15 @@
 		4C5BF3231C84DDF5000EE0E1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4C5BF3211C84DDF5000EE0E1 /* LaunchScreen.storyboard */; };
 		D71B679A1C9C827300C6AA6A /* glyphs in Resources */ = {isa = PBXBuildFile; fileRef = D71B67971C9C827300C6AA6A /* glyphs */; };
 		D71B679B1C9C827300C6AA6A /* sprites in Resources */ = {isa = PBXBuildFile; fileRef = D71B67981C9C827300C6AA6A /* sprites */; };
-		D74D7AD123A4477100BD8450 /* OSM2VectorTilesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D74D7AD023A4477100BD8450 /* OSM2VectorTilesTests.swift */; };
 		D753957023A43F6600CF4530 /* Mapbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D753956F23A43F6600CF4530 /* Mapbox.framework */; };
 		D753957123A43F6600CF4530 /* Mapbox.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = D753956F23A43F6600CF4530 /* Mapbox.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		D79CCE4723A469F700379BA5 /* OSM2VectorTilesUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D79CCE4623A469F700379BA5 /* OSM2VectorTilesUITests.swift */; };
 		FD137E021E08E259005C1849 /* styles in Resources */ = {isa = PBXBuildFile; fileRef = FD137E011E08E259005C1849 /* styles */; };
 		FD137E041E08E67E005C1849 /* geography-class.osm2vectortiles in Resources */ = {isa = PBXBuildFile; fileRef = FD137E031E08E67E005C1849 /* geography-class.osm2vectortiles */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		D74D7AD323A4477100BD8450 /* PBXContainerItemProxy */ = {
+		D79CCE4923A469F700379BA5 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 4C5BF30D1C84DDF5000EE0E1 /* Project object */;
 			proxyType = 1;
@@ -56,12 +56,12 @@
 		D71B67971C9C827300C6AA6A /* glyphs */ = {isa = PBXFileReference; lastKnownFileType = folder; path = glyphs; sourceTree = "<group>"; };
 		D71B67981C9C827300C6AA6A /* sprites */ = {isa = PBXFileReference; lastKnownFileType = folder; path = sprites; sourceTree = "<group>"; };
 		D71B67A41CA0946700C6AA6A /* geography-class.mbtiles */ = {isa = PBXFileReference; lastKnownFileType = file; path = "geography-class.mbtiles"; sourceTree = "<group>"; };
-		D74D7ACE23A4477000BD8450 /* OSM2VectorTilesTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = OSM2VectorTilesTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		D74D7AD023A4477100BD8450 /* OSM2VectorTilesTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OSM2VectorTilesTests.swift; sourceTree = "<group>"; };
-		D74D7AD223A4477100BD8450 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D74D7ADA23A4530900BD8450 /* post-action-script.sh */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; path = "post-action-script.sh"; sourceTree = "<group>"; };
 		D74D7ADB23A4530A00BD8450 /* pre-action-script.sh */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; path = "pre-action-script.sh"; sourceTree = "<group>"; };
 		D753956F23A43F6600CF4530 /* Mapbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Mapbox.framework; path = Carthage/Build/iOS/Mapbox.framework; sourceTree = "<group>"; };
+		D79CCE4423A469F700379BA5 /* OSM2VectorTilesUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = OSM2VectorTilesUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		D79CCE4623A469F700379BA5 /* OSM2VectorTilesUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OSM2VectorTilesUITests.swift; sourceTree = "<group>"; };
+		D79CCE4823A469F700379BA5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FD137E011E08E259005C1849 /* styles */ = {isa = PBXFileReference; lastKnownFileType = folder; path = styles; sourceTree = "<group>"; };
 		FD137E031E08E67E005C1849 /* geography-class.osm2vectortiles */ = {isa = PBXFileReference; lastKnownFileType = folder; path = "geography-class.osm2vectortiles"; sourceTree = "<group>"; };
 		FD184C7E1E3FBAEE007CC408 /* readme.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = readme.md; sourceTree = "<group>"; };
@@ -76,7 +76,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		D74D7ACB23A4477000BD8450 /* Frameworks */ = {
+		D79CCE4123A469F700379BA5 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -100,7 +100,7 @@
 				FD184C7E1E3FBAEE007CC408 /* readme.md */,
 				D76B160C2384D79D00887BDA /* Continuous-Integration */,
 				4C5BF3171C84DDF5000EE0E1 /* OSM2VectorTiles */,
-				D74D7ACF23A4477000BD8450 /* OSM2VectorTilesTests */,
+				D79CCE4523A469F700379BA5 /* OSM2VectorTilesUITests */,
 				4C5BF3161C84DDF5000EE0E1 /* Products */,
 				2E6C96FF13619EF1C4AFECF5 /* Frameworks */,
 			);
@@ -110,7 +110,7 @@
 			isa = PBXGroup;
 			children = (
 				4C5BF3151C84DDF5000EE0E1 /* OSM2VectorTiles.app */,
-				D74D7ACE23A4477000BD8450 /* OSM2VectorTilesTests.xctest */,
+				D79CCE4423A469F700379BA5 /* OSM2VectorTilesUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -141,15 +141,6 @@
 			name = Resources;
 			sourceTree = "<group>";
 		};
-		D74D7ACF23A4477000BD8450 /* OSM2VectorTilesTests */ = {
-			isa = PBXGroup;
-			children = (
-				D74D7AD023A4477100BD8450 /* OSM2VectorTilesTests.swift */,
-				D74D7AD223A4477100BD8450 /* Info.plist */,
-			);
-			path = OSM2VectorTilesTests;
-			sourceTree = "<group>";
-		};
 		D76B160C2384D79D00887BDA /* Continuous-Integration */ = {
 			isa = PBXGroup;
 			children = (
@@ -157,6 +148,15 @@
 				D74D7ADA23A4530900BD8450 /* post-action-script.sh */,
 			);
 			path = "Continuous-Integration";
+			sourceTree = "<group>";
+		};
+		D79CCE4523A469F700379BA5 /* OSM2VectorTilesUITests */ = {
+			isa = PBXGroup;
+			children = (
+				D79CCE4623A469F700379BA5 /* OSM2VectorTilesUITests.swift */,
+				D79CCE4823A469F700379BA5 /* Info.plist */,
+			);
+			path = OSM2VectorTilesUITests;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -170,7 +170,7 @@
 				4C5BF3121C84DDF5000EE0E1 /* Frameworks */,
 				4C5BF3131C84DDF5000EE0E1 /* Resources */,
 				4C5BF32D1C84DE90000EE0E1 /* Embed Frameworks */,
-				D74D7AD823A4480A00BD8450 /* Carthage */,
+				D74D7AD823A4480A00BD8450 /* carthage copy-frameworks */,
 			);
 			buildRules = (
 			);
@@ -181,23 +181,23 @@
 			productReference = 4C5BF3151C84DDF5000EE0E1 /* OSM2VectorTiles.app */;
 			productType = "com.apple.product-type.application";
 		};
-		D74D7ACD23A4477000BD8450 /* OSM2VectorTilesTests */ = {
+		D79CCE4323A469F700379BA5 /* OSM2VectorTilesUITests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = D74D7AD723A4477100BD8450 /* Build configuration list for PBXNativeTarget "OSM2VectorTilesTests" */;
+			buildConfigurationList = D79CCE4B23A469F700379BA5 /* Build configuration list for PBXNativeTarget "OSM2VectorTilesUITests" */;
 			buildPhases = (
-				D74D7ACA23A4477000BD8450 /* Sources */,
-				D74D7ACB23A4477000BD8450 /* Frameworks */,
-				D74D7ACC23A4477000BD8450 /* Resources */,
+				D79CCE4023A469F700379BA5 /* Sources */,
+				D79CCE4123A469F700379BA5 /* Frameworks */,
+				D79CCE4223A469F700379BA5 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				D74D7AD423A4477100BD8450 /* PBXTargetDependency */,
+				D79CCE4A23A469F700379BA5 /* PBXTargetDependency */,
 			);
-			name = OSM2VectorTilesTests;
-			productName = OSM2VectorTilesTests;
-			productReference = D74D7ACE23A4477000BD8450 /* OSM2VectorTilesTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
+			name = OSM2VectorTilesUITests;
+			productName = OSM2VectorTilesUITests;
+			productReference = D79CCE4423A469F700379BA5 /* OSM2VectorTilesUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
 		};
 /* End PBXNativeTarget section */
 
@@ -214,7 +214,7 @@
 						DevelopmentTeam = J7V35W7ES8;
 						LastSwiftMigration = 1120;
 					};
-					D74D7ACD23A4477000BD8450 = {
+					D79CCE4323A469F700379BA5 = {
 						CreatedOnToolsVersion = 11.3;
 						ProvisioningStyle = Automatic;
 						TestTargetID = 4C5BF3141C84DDF5000EE0E1;
@@ -235,7 +235,7 @@
 			projectRoot = "";
 			targets = (
 				4C5BF3141C84DDF5000EE0E1 /* OSM2VectorTiles */,
-				D74D7ACD23A4477000BD8450 /* OSM2VectorTilesTests */,
+				D79CCE4323A469F700379BA5 /* OSM2VectorTilesUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -255,7 +255,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		D74D7ACC23A4477000BD8450 /* Resources */ = {
+		D79CCE4223A469F700379BA5 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -265,7 +265,7 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		D74D7AD823A4480A00BD8450 /* Carthage */ = {
+		D74D7AD823A4480A00BD8450 /* carthage copy-frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -275,7 +275,7 @@
 			inputPaths = (
 				"$(SRCROOT)/Carthage/Build/iOS/Mapbox.framework",
 			);
-			name = Carthage;
+			name = "carthage copy-frameworks";
 			outputFileListPaths = (
 			);
 			outputPaths = (
@@ -296,21 +296,21 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		D74D7ACA23A4477000BD8450 /* Sources */ = {
+		D79CCE4023A469F700379BA5 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D74D7AD123A4477100BD8450 /* OSM2VectorTilesTests.swift in Sources */,
+				D79CCE4723A469F700379BA5 /* OSM2VectorTilesUITests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		D74D7AD423A4477100BD8450 /* PBXTargetDependency */ = {
+		D79CCE4A23A469F700379BA5 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = 4C5BF3141C84DDF5000EE0E1 /* OSM2VectorTiles */;
-			targetProxy = D74D7AD323A4477100BD8450 /* PBXContainerItemProxy */;
+			targetProxy = D79CCE4923A469F700379BA5 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -482,10 +482,9 @@
 			};
 			name = Release;
 		};
-		D74D7AD523A4477100BD8450 /* Debug */ = {
+		D79CCE4C23A469F700379BA5 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				BUNDLE_LOADER = "$(TEST_HOST)";
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
@@ -494,24 +493,23 @@
 				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
 				CODE_SIGN_STYLE = Automatic;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
-				INFOPLIST_FILE = OSM2VectorTilesTests/Info.plist;
+				INFOPLIST_FILE = OSM2VectorTilesUITests/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
-				PRODUCT_BUNDLE_IDENTIFIER = com.roblabs.OSM2VectorTilesTests;
+				PRODUCT_BUNDLE_IDENTIFIER = com.roblabs.OSM2VectorTilesUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/OSM2VectorTiles.app/OSM2VectorTiles";
+				TEST_TARGET_NAME = OSM2VectorTiles;
 			};
 			name = Debug;
 		};
-		D74D7AD623A4477100BD8450 /* Release */ = {
+		D79CCE4D23A469F700379BA5 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				BUNDLE_LOADER = "$(TEST_HOST)";
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
@@ -520,15 +518,15 @@
 				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
 				CODE_SIGN_STYLE = Automatic;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
-				INFOPLIST_FILE = OSM2VectorTilesTests/Info.plist;
+				INFOPLIST_FILE = OSM2VectorTilesUITests/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MTL_FAST_MATH = YES;
-				PRODUCT_BUNDLE_IDENTIFIER = com.roblabs.OSM2VectorTilesTests;
+				PRODUCT_BUNDLE_IDENTIFIER = com.roblabs.OSM2VectorTilesUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/OSM2VectorTiles.app/OSM2VectorTiles";
+				TEST_TARGET_NAME = OSM2VectorTiles;
 			};
 			name = Release;
 		};
@@ -553,11 +551,11 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		D74D7AD723A4477100BD8450 /* Build configuration list for PBXNativeTarget "OSM2VectorTilesTests" */ = {
+		D79CCE4B23A469F700379BA5 /* Build configuration list for PBXNativeTarget "OSM2VectorTilesUITests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				D74D7AD523A4477100BD8450 /* Debug */,
-				D74D7AD623A4477100BD8450 /* Release */,
+				D79CCE4C23A469F700379BA5 /* Debug */,
+				D79CCE4D23A469F700379BA5 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

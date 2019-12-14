@@ -1,0 +1,29 @@
+{
+  "configurations" : [
+    {
+      "id" : "5B324C5E-9AF3-419F-AB46-B9BFDE43EEB5",
+      "name" : "Configuration 1",
+      "options" : {
+
+      }
+    }
+  ],
+  "defaultOptions" : {
+    "targetForVariableExpansion" : {
+      "containerPath" : "container:openmaptiles-ios-demo.xcodeproj",
+      "identifier" : "4C5BF3141C84DDF5000EE0E1",
+      "name" : "OSM2VectorTiles"
+    },
+    "uiTestingScreenshotsLifetime" : "keepAlways"
+  },
+  "testTargets" : [
+    {
+      "target" : {
+        "containerPath" : "container:openmaptiles-ios-demo.xcodeproj",
+        "identifier" : "D79CCE4323A469F700379BA5",
+        "name" : "OSM2VectorTilesUITests"
+      }
+    }
+  ],
+  "version" : 1
+}

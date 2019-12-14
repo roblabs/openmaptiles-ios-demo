@@ -9,8 +9,8 @@
          <ExecutionAction
             ActionType = "Xcode.IDEStandardExecutionActionsCore.ExecutionActionType.ShellScriptAction">
             <ActionContent
-               title = "Run Script"
-               scriptText = "sh ${PROJECT_DIR}/Continuous-Integration/pre-action-script.sh&#10;">
+               title = "metadata.sh"
+               scriptText = "sh ${PROJECT_DIR}/Continuous-Integration/metadata.sh&#10;">
                <EnvironmentBuildable>
                   <BuildableReference
                      BuildableIdentifier = "primary"
@@ -20,6 +20,13 @@
                      ReferencedContainer = "container:openmaptiles-ios-demo.xcodeproj">
                   </BuildableReference>
                </EnvironmentBuildable>
+            </ActionContent>
+         </ExecutionAction>
+         <ExecutionAction
+            ActionType = "Xcode.IDEStandardExecutionActionsCore.ExecutionActionType.ShellScriptAction">
+            <ActionContent
+               title = "carthage.sh"
+               scriptText = "sh ${PROJECT_DIR}/Continuous-Integration/carthage.sh&#10;">
             </ActionContent>
          </ExecutionAction>
       </PreActions>
@@ -54,24 +61,12 @@
       selectedDebuggerIdentifier = "Xcode.DebuggerFoundation.Debugger.LLDB"
       selectedLauncherIdentifier = "Xcode.DebuggerFoundation.Launcher.LLDB"
       shouldUseLaunchSchemeArgsEnv = "YES">
-      <PostActions>
-         <ExecutionAction
-            ActionType = "Xcode.IDEStandardExecutionActionsCore.ExecutionActionType.ShellScriptAction">
-            <ActionContent
-               title = "Run Script"
-               scriptText = "sh ${PROJECT_DIR}/Continuous-Integration/post-action-script.sh&#10;">
-               <EnvironmentBuildable>
-                  <BuildableReference
-                     BuildableIdentifier = "primary"
-                     BlueprintIdentifier = "4C5BF3141C84DDF5000EE0E1"
-                     BuildableName = "OSM2VectorTiles.app"
-                     BlueprintName = "OSM2VectorTiles"
-                     ReferencedContainer = "container:openmaptiles-ios-demo.xcodeproj">
-                  </BuildableReference>
-               </EnvironmentBuildable>
-            </ActionContent>
-         </ExecutionAction>
-      </PostActions>
+      <TestPlans>
+         <TestPlanReference
+            reference = "container:OSM2VectorTiles.xctestplan"
+            default = "YES">
+         </TestPlanReference>
+      </TestPlans>
       <Testables>
          <TestableReference
             skipped = "NO">
@@ -80,6 +75,16 @@
                BlueprintIdentifier = "D74D7ACD23A4477000BD8450"
                BuildableName = "OSM2VectorTilesTests.xctest"
                BlueprintName = "OSM2VectorTilesTests"
+               ReferencedContainer = "container:openmaptiles-ios-demo.xcodeproj">
+            </BuildableReference>
+         </TestableReference>
+         <TestableReference
+            skipped = "NO">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "D79CCE4323A469F700379BA5"
+               BuildableName = "OSM2VectorTilesUITests.xctest"
+               BlueprintName = "OSM2VectorTilesUITests"
                ReferencedContainer = "container:openmaptiles-ios-demo.xcodeproj">
             </BuildableReference>
          </TestableReference>

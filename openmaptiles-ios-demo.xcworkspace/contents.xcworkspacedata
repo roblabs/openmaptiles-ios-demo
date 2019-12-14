@@ -4,4 +4,7 @@
    <FileRef
       location = "group:openmaptiles-ios-demo.xcodeproj">
    </FileRef>
+   <FileRef
+      location = "group:OSM2VectorTiles.xctestplan">
+   </FileRef>
 </Workspace>
