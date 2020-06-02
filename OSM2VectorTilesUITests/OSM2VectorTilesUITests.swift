@@ -3,7 +3,7 @@
 //  OSM2VectorTilesUITests
 //
 //  Created by Rob Labs on 12/13/19.
-//  Copyright © 2019 ePi Rational, Inc.. All rights reserved.
+//  Copyright © 2019, 2020 ePi Rational, Inc.. All rights reserved.
 //
 
 import XCTest
@@ -15,6 +15,7 @@ class OSM2VectorTilesUITests: XCTestCase {
     override func setUp() {
         // Put setup code here. This method is called before the invocation of each test method in the class.
         
+        super.setUp()
         app.launch()
 
         // In UI tests it is usually best to stop immediately when a failure occurs.
@@ -25,6 +26,12 @@ class OSM2VectorTilesUITests: XCTestCase {
 
     override func tearDown() {
         // Put teardown code here. This method is called after the invocation of each test method in the class.
+        super.tearDown()
+        app.terminate()
+    }
+    
+    func testPrintAccessibilityHierarchy() {
+        print(app.debugDescription)
     }
     
     func testInfo() {

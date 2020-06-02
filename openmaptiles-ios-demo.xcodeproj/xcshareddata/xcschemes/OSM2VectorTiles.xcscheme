@@ -9,8 +9,8 @@
          <ExecutionAction
             ActionType = "Xcode.IDEStandardExecutionActionsCore.ExecutionActionType.ShellScriptAction">
             <ActionContent
-               title = "metadata.sh"
-               scriptText = "sh ${PROJECT_DIR}/Continuous-Integration/pre-action-script.sh&#10;">
+               title = "Run Script"
+               scriptText = "sh ${PROJECT_DIR}/Continuous-Integration/ci.sh&#10;">
                <EnvironmentBuildable>
                   <BuildableReference
                      BuildableIdentifier = "primary"
@@ -23,15 +23,6 @@
             </ActionContent>
          </ExecutionAction>
       </PreActions>
-      <PostActions>
-         <ExecutionAction
-            ActionType = "Xcode.IDEStandardExecutionActionsCore.ExecutionActionType.ShellScriptAction">
-            <ActionContent
-               title = "Run Script"
-               scriptText = "sh ${PROJECT_DIR}/Continuous-Integration/post-action-script.sh&#10;">
-            </ActionContent>
-         </ExecutionAction>
-      </PostActions>
       <BuildActionEntries>
          <BuildActionEntry
             buildForTesting = "YES"
@@ -65,7 +56,7 @@
             skipped = "NO">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "D79CCE4323A469F700379BA5"
+               BlueprintIdentifier = "D7AAD8CB2395EB1D002BA6A3"
                BuildableName = "OSM2VectorTilesUITests.xctest"
                BlueprintName = "OSM2VectorTilesUITests"
                ReferencedContainer = "container:openmaptiles-ios-demo.xcodeproj">
