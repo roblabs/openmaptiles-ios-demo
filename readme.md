@@ -59,6 +59,27 @@ open openmaptiles-ios-demo.xcodeproj
 "glyphs": "asset://glyphs/{fontstack}/{range}.pbf",
 ```
 
+---
+
+### Soft Proofing Tiles
+
+You can Soft Proof your tiles before they are installed into mobile by using [Tileserver GL](https://github.com/maptiler/tileserver-gl#readme).
+
+```
+# Install `serve` from https://www.npmjs.com/package/serve
+#  yarn global add serve   # do this once
+
+cd OSM2VectorTiles
+
+# Serve raw `.pbf` files
+serve . -C  # default port is 5000
+
+# Using a different server to hook into those raw tiles
+alias tsgl='docker run --rm -it -v "$(pwd)":/data -p 8081:80 maptiler/tileserver-gl --verbose'
+
+tsgl  # starts Tileserver GL using the file config.json
+```
+
 
 ![geography-class](geography-class.gif)
 
@@ -68,10 +89,12 @@ open openmaptiles-ios-demo.xcodeproj
 
 ### Change Log
 
+* Jun 17, 2020
+  * Add `config.json` for use by [Tileserver GL](https://github.com/maptiler/tileserver-gl#readme)
 * Jun 2, 2020
   * Update to use Carthage only; removed dependency on Cocoapods
   * Upgrade to Xcode 11.5
-  * Uprade to Mapbox 5.9 & mapbox-events-ios 0.10
+  * Upgrade to Mapbox 5.9 & mapbox-events-ios 0.10
   * Add Xcode Bots & Continuous Integration scripts
 * Dec 13, 2019
   * Move from Cocoapods to Carthage
