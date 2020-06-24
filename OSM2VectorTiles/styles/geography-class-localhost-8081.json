@@ -18,12 +18,12 @@
       "minzoom": 0,
       "maxzoom": 7,
       "tiles": [
-        "http://localhost:5000/geography-class.osm2vectortiles/{z}/{x}/{y}.pbf"
+        "http://localhost:8081/data/geography-class/{z}/{x}/{y}.pbf"
       ]
     }
   },
-  "sprite": "http://localhost:5000/sprites/bright-v8",
-  "glyphs": "http://localhost:5000/glyphs/{fontstack}/{range}.pbf",
+  "sprite": "http://localhost:8081/sprites/bright-v8",
+  "glyphs": "http://localhost:8081/glyphs/{fontstack}/{range}.pbf",
   "layers": [
     {
       "id": "background",

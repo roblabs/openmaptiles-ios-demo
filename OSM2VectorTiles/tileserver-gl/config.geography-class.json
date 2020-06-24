@@ -1,0 +1,41 @@
+{
+  "options": {
+    "paths": {
+      "root": "/data",
+      "fonts": "glyphs",
+      "sprites": "sprites",
+      "styles": "styles",
+      "mbtiles": "/data"
+    }
+  },
+  "styles": {
+    "geography-class-localhost-5000": {
+      "serve_rendered": false,
+      "serve_data": true,
+      "style": "geography-class-localhost-5000.json",
+      "tilejson": {
+        "attribution": "Attribution set in config.json",
+        "bounds": [-180, -85.0511, 180, 85.0511],
+        "center": [0, 0, 0],
+        "description": "Using https://www.npmjs.com/package/serve",
+        "usage": "serve . -C",
+        "version": "1.0.0"
+      }
+    },
+    "geography-class-localhost-8081": {
+      "serve_rendered": false,
+      "serve_data": true,
+      "style": "geography-class-localhost-8081.json",
+      "tilejson": {
+        "attribution": "Attribution set in config.json",
+        "bounds": [-180, -85.0511, 180, 85.0511],
+        "center": [0, 0, 0]
+      }
+    }
+  },
+  "data": {
+    "geography-class": {
+      "mbtiles": "geography-class.mbtiles"
+    }
+  }
+}

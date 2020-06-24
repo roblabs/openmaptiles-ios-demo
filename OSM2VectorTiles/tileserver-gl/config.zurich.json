@@ -1,0 +1,42 @@
+{
+  "metadata": {
+    "name": "tileserver-gl",
+    "version": "v3.0.0",
+    "description": "Tileserver GL (TSGL) test config for local assets",
+    "doc": "https://tileserver.readthedocs.io/",
+    "docker": {
+      "bin": "docker run --rm -it -v $(pwd):/data -p 8081:80 maptiler/tileserver-gl:v3.0.0 --no-cors --verbose",
+      "pull": "docker pull maptiler/tileserver-gl:v3.0.0",
+      "url": "https://hub.docker.com/r/maptiler/tileserver-gl"
+    },
+    "npm": {
+      "install": "npm install -g tileserver-gl",
+      "url": "https://www.npmjs.com/package/tileserver-gl"
+    },
+    "mbtiles": {
+      "wget": "wget -N -P mbtiles https://github.com/maptiler/tileserver-gl/releases/download/v1.3.0/zurich_switzerland.mbtiles"
+    }
+  },
+  "options": {
+    "paths": {
+      "root": "/usr/src/app/node_modules/tileserver-gl-styles",
+      "fonts": "fonts",
+      "sprites": "sprites",
+      "styles": "styles",
+      "mbtiles": "/data/mbtiles"
+    }
+  },
+  "styles": {
+    "basic-preview": {
+      "style": "basic-preview/style.json",
+      "tilejson": {
+        "bounds": [8.275, 47.225, 8.8, 47.533]
+      }
+    }
+  },
+  "data": {
+    "v3": {
+      "mbtiles": "zurich_switzerland.mbtiles"
+    }
+  }
+}

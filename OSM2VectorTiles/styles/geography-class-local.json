@@ -16,7 +16,7 @@
         85.051129
       ],
       "minzoom": 0,
-      "maxzoom": 8,
+      "maxzoom": 7,
       "tiles": [
         "asset://geography-class.osm2vectortiles/{z}/{x}/{y}.pbf"
       ]

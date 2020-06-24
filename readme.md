@@ -71,8 +71,11 @@ You can Soft Proof your tiles before they are installed into mobile by using [Ti
 
 cd OSM2VectorTiles
 
-# Serve raw `.pbf` files
-serve . -C  # default port is 5000
+# Serve raw `.pbf` files using [serve](https://www.npmjs.com/package/serve)
+# serve -v # version
+
+# Be sure to open `http://localhost:5000` to confirm what is being served
+serve --cors --listen 5000 # serve current directory; CORS; listen on port 5000
 
 # Using a different server to hook into those raw tiles
 alias tsgl='docker run --rm -it -v "$(pwd)":/data -p 8081:80 maptiler/tileserver-gl --verbose'
@@ -80,6 +83,43 @@ alias tsgl='docker run --rm -it -v "$(pwd)":/data -p 8081:80 maptiler/tileserver
 tsgl  # starts Tileserver GL using the file config.json
 ```
 
+#### Zurich Sample
+
+Using the Zurich Sample from Maptiler.  
+
+See the [`metadata`](tileserver-gl/config.zurich.json) for details on
+* how to run Tileserver-GL using `docker` or `npm`.
+* How to fetch the Zurich MBTiles
+
+##### Available Endpoints
+
+* Useful for inspecting OpenMapTiles schema `v3` with a Basic style
+  * Health — [http://localhost:8081/health](http://localhost:8081/health)
+  * TileJSON — [http://localhost:8081/index.json](http://localhost:8081/index.json)
+  * Styles — [http://localhost:8081/styles.json](http://localhost:8081/styles.json)
+  * Fonts or Glyphs used in the style (not the fonts used by Mapbox) — [http://localhost:8081/fonts.json](http://localhost:8081/fonts.json)
+
+```
+tsgl --config tileserver-gl/config.zurich.json
+```
+
+#### Geography Class
+
+Geography Class does not conform the OpenMapTiles schema `v3`.  You can inspect
+
+##### Available Endpoints
+
+* Health — [http://localhost:8081/health](http://localhost:8081/health)
+* TileJSON — [http://localhost:8081/index.json](http://localhost:8081/index.json)
+* Styles — [http://localhost:8081/styles.json](http://localhost:8081/styles.json)
+* Fonts or Glyphs used in the style (not the fonts used by Mapbox) — [http://localhost:8081/fonts.json](http://localhost:8081/fonts.json)
+* Sprites  for this particular style — [http://localhost:5000/sprites/bright-v8@2x.png](http://localhost:5000/sprites/bright-v8@2x.png)
+
+```
+tsgl --config tileserver-gl/config.geography-class.json
+```
+
+---
 
 ![geography-class](geography-class.gif)
 
@@ -89,6 +129,8 @@ tsgl  # starts Tileserver GL using the file config.json
 
 ### Change Log
 
+* Jun 24, 2020
+  * Updated notes on how to use Tileserver GL
 * Jun 17, 2020
   * Add `config.json` for use by [Tileserver GL](https://github.com/maptiler/tileserver-gl#readme)
 * Jun 2, 2020
