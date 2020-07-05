@@ -1,17 +1,22 @@
-Building upon https://github.com/klokantech/osm2vectortiles-ios, now an iOS app
-can be built to have local vector data, styles, glyphs and sprites.
+# Offline Map for Mobile
+
+This repo describes how to build an Offline Map for mobile on iOS.  Local assets such as vector data, styles, glyphs and sprites are built into a sample iOS app.
 
 ## Features
 
 * 100% local data (notice in the animation that WiFi is turned off at the beginning of the demo)
 * Vector data built using https://openmaptiles.org
 * Styling of the countries is from https://github.com/klokantech/mapbox-gl-js-offline-example
+* Built upon https://github.com/klokantech/osm2vectortiles-ios, now an iOS app
+can be built to have local vector data, styles, glyphs and sprites.
 
 ## Build
 
 * Install `carthage` via https://github.com/Carthage/Carthage
   * `# brew install carthage`  
   * `carthage update`
+
+---
 
 ### Command Line Building
 
