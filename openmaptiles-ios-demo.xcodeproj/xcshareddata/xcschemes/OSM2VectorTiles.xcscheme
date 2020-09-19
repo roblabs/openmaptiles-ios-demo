@@ -10,16 +10,7 @@
             ActionType = "Xcode.IDEStandardExecutionActionsCore.ExecutionActionType.ShellScriptAction">
             <ActionContent
                title = "Run Script"
-               scriptText = "git submodule update --init --recursive&#10;sh ${PROJECT_DIR}/xcode-continuous-integration/ci.sh&#10;">
-               <EnvironmentBuildable>
-                  <BuildableReference
-                     BuildableIdentifier = "primary"
-                     BlueprintIdentifier = "4C5BF3141C84DDF5000EE0E1"
-                     BuildableName = "OSM2VectorTiles.app"
-                     BlueprintName = "OSM2VectorTiles"
-                     ReferencedContainer = "container:openmaptiles-ios-demo.xcodeproj">
-                  </BuildableReference>
-               </EnvironmentBuildable>
+               scriptText = "cd ${PROJECT_DIR}&#10;git submodule update --init --recursive&#10;wait&#10;sh ${PROJECT_DIR}/xcode-continuous-integration/ci.sh&#10;">
             </ActionContent>
          </ExecutionAction>
       </PreActions>
