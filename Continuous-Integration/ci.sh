@@ -1,5 +1,7 @@
 #! /bin/sh
-# Add to To scheme with these commands
+# This file is called:  Continuous-Integration/ci.sh
+
+# Add to scheme with these commands
   # sh ${PROJECT_DIR}/Continuous-Integration/ci.sh
   
 
@@ -67,4 +69,5 @@ carthage update
 wait
 date
 
-#open $PREBUILD_LOG
+echo PREBUILD_LOG = $PREBUILD_LOG
+open $PREBUILD_LOG
