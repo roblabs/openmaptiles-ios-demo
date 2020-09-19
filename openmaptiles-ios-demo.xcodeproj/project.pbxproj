@@ -55,7 +55,6 @@
 		D71B67971C9C827300C6AA6A /* glyphs */ = {isa = PBXFileReference; lastKnownFileType = folder; path = glyphs; sourceTree = "<group>"; };
 		D71B67981C9C827300C6AA6A /* sprites */ = {isa = PBXFileReference; lastKnownFileType = folder; path = sprites; sourceTree = "<group>"; };
 		D71B67A41CA0946700C6AA6A /* geography-class.mbtiles */ = {isa = PBXFileReference; lastKnownFileType = file; path = "geography-class.mbtiles"; sourceTree = "<group>"; };
-		D76B160B2384D78C00887BDA /* ci.sh */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; path = ci.sh; sourceTree = "<group>"; };
 		D7AAD8CC2395EB1D002BA6A3 /* OSM2VectorTilesUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = OSM2VectorTilesUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D7AAD8CE2395EB1D002BA6A3 /* OSM2VectorTilesUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OSM2VectorTilesUITests.swift; sourceTree = "<group>"; };
 		D7AAD8D02395EB1D002BA6A3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -99,7 +98,6 @@
 			children = (
 				FD184C7E1E3FBAEE007CC408 /* readme.md */,
 				D7B2C58E24B27E3E00CFEA39 /* SwiftUI-Previews */,
-				D76B160C2384D79D00887BDA /* Continuous-Integration */,
 				4C5BF3171C84DDF5000EE0E1 /* OSM2VectorTiles */,
 				D7AAD8CD2395EB1D002BA6A3 /* OSM2VectorTilesUITests */,
 				4C5BF3161C84DDF5000EE0E1 /* Products */,
@@ -140,14 +138,6 @@
 				D71B67971C9C827300C6AA6A /* glyphs */,
 			);
 			name = Resources;
-			sourceTree = "<group>";
-		};
-		D76B160C2384D79D00887BDA /* Continuous-Integration */ = {
-			isa = PBXGroup;
-			children = (
-				D76B160B2384D78C00887BDA /* ci.sh */,
-			);
-			path = "Continuous-Integration";
 			sourceTree = "<group>";
 		};
 		D7AAD8CD2395EB1D002BA6A3 /* OSM2VectorTilesUITests */ = {
