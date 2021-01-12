@@ -1,3 +1,6 @@
 xcuserdata
 Carthage/
 prebuild.log
+
+# GitHub Actions
+actions-runner/

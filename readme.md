@@ -16,6 +16,11 @@ can be built to have local vector data, styles, glyphs and sprites.
   * `# brew install carthage`  
   * `carthage update`
 
+### GitHub Actions
+
+* https://docs.github.com/actions/quickstart
+* [![CI](https://github.com/roblabs/openmaptiles-ios-demo/workflows/CI/badge.svg)](https://github.com/roblabs/openmaptiles-ios-demo/actions?query=workflow%3ACI)
+
 ---
 
 ### Command Line Building
