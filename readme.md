@@ -12,9 +12,7 @@ can be built to have local vector data, styles, glyphs and sprites.
 
 ## Build
 
-* Install `carthage` via https://github.com/Carthage/Carthage
-  * `# brew install carthage`  
-  * `carthage update`
+The [MapLibre Mobile SDK](https://github.com/maptiler/maplibre-gl-native-distribution) is installed via the [Swift Package Manager](https://developer.apple.com/documentation/swift_packages).
 
 ### GitHub Actions
 
@@ -141,6 +139,7 @@ tsgl --config tileserver-gl/config.geography-class.json
 
 * Jan 26, 2021
   * Update to MapLibre.  https://github.com/maptiler/maplibre-gl-native-distribution/pull/2
+  * Remove references to Carthage.  See the branch `carthage`, if needed.
 * Jun 24, 2020
   * Updated notes on how to use Tileserver GL
 * Jun 17, 2020
