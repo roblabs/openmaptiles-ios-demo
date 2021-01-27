@@ -139,6 +139,8 @@ tsgl --config tileserver-gl/config.geography-class.json
 
 ### Change Log
 
+* Jan 26, 2021
+  * Update to MapLibre.  https://github.com/maptiler/maplibre-gl-native-distribution/pull/2
 * Jun 24, 2020
   * Updated notes on how to use Tileserver GL
 * Jun 17, 2020
