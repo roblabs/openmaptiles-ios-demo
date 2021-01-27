@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 46;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -14,9 +14,10 @@
 		4C5BF3231C84DDF5000EE0E1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4C5BF3211C84DDF5000EE0E1 /* LaunchScreen.storyboard */; };
 		D71B679A1C9C827300C6AA6A /* glyphs in Resources */ = {isa = PBXBuildFile; fileRef = D71B67971C9C827300C6AA6A /* glyphs */; };
 		D71B679B1C9C827300C6AA6A /* sprites in Resources */ = {isa = PBXBuildFile; fileRef = D71B67981C9C827300C6AA6A /* sprites */; };
+		D76E35A025C0E72B004CCEBF /* MapboxMobileEvents in Frameworks */ = {isa = PBXBuildFile; productRef = D76E359F25C0E72B004CCEBF /* MapboxMobileEvents */; };
+		D76E35A225C0E72B004CCEBF /* Mapbox in Frameworks */ = {isa = PBXBuildFile; productRef = D76E35A125C0E72B004CCEBF /* Mapbox */; };
 		D7AAD8CF2395EB1D002BA6A3 /* OSM2VectorTilesUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7AAD8CE2395EB1D002BA6A3 /* OSM2VectorTilesUITests.swift */; };
 		D7B2C58D24B27DEA00CFEA39 /* ViewController_Preview.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7B2C58C24B27DE900CFEA39 /* ViewController_Preview.swift */; };
-		D7CC50CE2486E0610001AA89 /* Mapbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D7CC50CD2486E0610001AA89 /* Mapbox.framework */; };
 		FD137E021E08E259005C1849 /* styles in Resources */ = {isa = PBXBuildFile; fileRef = FD137E011E08E259005C1849 /* styles */; };
 		FD137E041E08E67E005C1849 /* geography-class.osm2vectortiles in Resources */ = {isa = PBXBuildFile; fileRef = FD137E031E08E67E005C1849 /* geography-class.osm2vectortiles */; };
 /* End PBXBuildFile section */
@@ -71,7 +72,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D7CC50CE2486E0610001AA89 /* Mapbox.framework in Frameworks */,
+				D76E35A225C0E72B004CCEBF /* Mapbox in Frameworks */,
+				D76E35A025C0E72B004CCEBF /* MapboxMobileEvents in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -169,13 +171,16 @@
 				4C5BF3121C84DDF5000EE0E1 /* Frameworks */,
 				4C5BF3131C84DDF5000EE0E1 /* Resources */,
 				4C5BF32D1C84DE90000EE0E1 /* Embed Frameworks */,
-				D7CC50CF2486E07D0001AA89 /* Run Script `carthage copy-frameworks` */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
 			name = OSM2VectorTiles;
+			packageProductDependencies = (
+				D76E359F25C0E72B004CCEBF /* MapboxMobileEvents */,
+				D76E35A125C0E72B004CCEBF /* Mapbox */,
+			);
 			productName = OSM2VectorTiles;
 			productReference = 4C5BF3151C84DDF5000EE0E1 /* OSM2VectorTiles.app */;
 			productType = "com.apple.product-type.application";
@@ -230,6 +235,9 @@
 				Base,
 			);
 			mainGroup = 4C5BF30C1C84DDF5000EE0E1;
+			packageReferences = (
+				D76E359E25C0E72B004CCEBF /* XCRemoteSwiftPackageReference "maplibre-gl-native-distribution" */,
+			);
 			productRefGroup = 4C5BF3161C84DDF5000EE0E1 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -263,29 +271,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
-
-/* Begin PBXShellScriptBuildPhase section */
-		D7CC50CF2486E07D0001AA89 /* Run Script `carthage copy-frameworks` */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-				"$(SRCROOT)/Carthage/Build/iOS/Mapbox.framework",
-				"$(SRCROOT)/Carthage/Build/iOS/MapboxMobileEvents.framework",
-			);
-			name = "Run Script `carthage copy-frameworks`";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "/usr/local/bin/carthage copy-frameworks\n";
-		};
-/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		4C5BF3111C84DDF5000EE0E1 /* Sources */ = {
@@ -436,7 +421,8 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
-				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
 			};
@@ -451,11 +437,13 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)",
-					"$(PROJECT_DIR)/Carthage/Build/iOS",
 				);
 				INFOPLIST_FILE = OSM2VectorTiles/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				MARKETING_VERSION = "1.341.1${XCS_INTEGRATION_NUMBER}";
 				PRODUCT_BUNDLE_IDENTIFIER = com.roblabs.papermaps.GeographyClass;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -473,11 +461,13 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)",
-					"$(PROJECT_DIR)/Carthage/Build/iOS",
 				);
 				INFOPLIST_FILE = OSM2VectorTiles/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				MARKETING_VERSION = "1.341.1${XCS_INTEGRATION_NUMBER}";
 				PRODUCT_BUNDLE_IDENTIFIER = com.roblabs.papermaps.GeographyClass;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -500,7 +490,11 @@
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				INFOPLIST_FILE = OSM2VectorTilesUITests/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				PRODUCT_BUNDLE_IDENTIFIER = com.roblabs.OSM2VectorTilesUITests;
@@ -526,7 +520,11 @@
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				INFOPLIST_FILE = OSM2VectorTilesUITests/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				MTL_FAST_MATH = YES;
 				PRODUCT_BUNDLE_IDENTIFIER = com.roblabs.OSM2VectorTilesUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -567,6 +565,30 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		D76E359E25C0E72B004CCEBF /* XCRemoteSwiftPackageReference "maplibre-gl-native-distribution" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/roblabs/maplibre-gl-native-distribution";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.10.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		D76E359F25C0E72B004CCEBF /* MapboxMobileEvents */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = D76E359E25C0E72B004CCEBF /* XCRemoteSwiftPackageReference "maplibre-gl-native-distribution" */;
+			productName = MapboxMobileEvents;
+		};
+		D76E35A125C0E72B004CCEBF /* Mapbox */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = D76E359E25C0E72B004CCEBF /* XCRemoteSwiftPackageReference "maplibre-gl-native-distribution" */;
+			productName = Mapbox;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 4C5BF30D1C84DDF5000EE0E1 /* Project object */;
 }
