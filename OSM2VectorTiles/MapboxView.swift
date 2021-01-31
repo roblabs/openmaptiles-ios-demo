@@ -16,9 +16,9 @@ struct MapboxView: UIViewRepresentable {
         mapView.update { (mapOptions) in
             mapOptions.ornaments.showsScale = true
         }
+        style = "http://10.0.1.3:5000/styles/style.json"
 
-        let localStyle = "asset://styles/geography-class-local.json"
-        let _ = setStyle(localStyle)
+        mapView.style.styleURL = StyleURL.custom(url: URL(string: style)!)
     }
     
     func makeCoordinator() -> MapboxView.Coordinator {
