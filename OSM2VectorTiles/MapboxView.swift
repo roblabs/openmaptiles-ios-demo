@@ -1,25 +1,25 @@
 import SwiftUI
 import Mapbox
 
-struct MapView: UIViewRepresentable {
+struct MapboxView: UIViewRepresentable {
 
     private let mapView: MGLMapView = MGLMapView(frame: .zero, styleURL: MGLStyle.streetsStyleURL)
     
     // MARK: - Configuring UIViewRepresentable protocol
     
-    func makeUIView(context: UIViewRepresentableContext<MapView>) -> MGLMapView {
+    func makeUIView(context: UIViewRepresentableContext<MapboxView>) -> MGLMapView {
         mapView.delegate = context.coordinator
         mapView.logoView.isHidden = true
         return mapView
     }
     
-    func updateUIView(_ uiView: MGLMapView, context: UIViewRepresentableContext<MapView>) {
+    func updateUIView(_ uiView: MGLMapView, context: UIViewRepresentableContext<MapboxView>) {
 
         let localStyle = "asset://styles/geography-class-local.json"
         let _ = setStyle(localStyle)
     }
     
-    func makeCoordinator() -> MapView.Coordinator {
+    func makeCoordinator() -> MapboxView.Coordinator {
         Coordinator(self)
     }
     
@@ -27,17 +27,17 @@ struct MapView: UIViewRepresentable {
     
     /// Set the Map Style by string
     /// - parameter styleURL
-    func setStyle(_ styleURL: String) -> MapView {
+    func setStyle(_ styleURL: String) -> MapboxView {
         mapView.styleURL = URL(string: styleURL)
         return self
     }
     
-    func centerCoordinate(_ centerCoordinate: CLLocationCoordinate2D) -> MapView {
+    func centerCoordinate(_ centerCoordinate: CLLocationCoordinate2D) -> MapboxView {
         mapView.centerCoordinate = centerCoordinate
         return self
     }
     
-    func zoomLevel(_ zoomLevel: Double) -> MapView {
+    func zoomLevel(_ zoomLevel: Double) -> MapboxView {
         mapView.zoomLevel = zoomLevel
         return self
     }
@@ -45,9 +45,9 @@ struct MapView: UIViewRepresentable {
     // MARK: - Implementing MGLMapViewDelegate
     
     final class Coordinator: NSObject, MGLMapViewDelegate {
-        var control: MapView
+        var control: MapboxView
         
-        init(_ control: MapView) {
+        init(_ control: MapboxView) {
             self.control = control
         }
         

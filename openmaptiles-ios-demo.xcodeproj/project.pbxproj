@@ -11,7 +11,7 @@
 		4C5BF3231C84DDF5000EE0E1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4C5BF3211C84DDF5000EE0E1 /* LaunchScreen.storyboard */; };
 		D717E7E525C63711004C4F31 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D717E7E125C63711004C4F31 /* ContentView.swift */; };
 		D717E7E625C63711004C4F31 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D717E7E225C63711004C4F31 /* SceneDelegate.swift */; };
-		D717E7E725C63711004C4F31 /* MapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D717E7E325C63711004C4F31 /* MapView.swift */; };
+		D717E7E725C63711004C4F31 /* MapboxView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D717E7E325C63711004C4F31 /* MapboxView.swift */; };
 		D717E7E825C63711004C4F31 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D717E7E425C63711004C4F31 /* AppDelegate.swift */; };
 		D71B679A1C9C827300C6AA6A /* glyphs in Resources */ = {isa = PBXBuildFile; fileRef = D71B67971C9C827300C6AA6A /* glyphs */; };
 		D71B679B1C9C827300C6AA6A /* sprites in Resources */ = {isa = PBXBuildFile; fileRef = D71B67981C9C827300C6AA6A /* sprites */; };
@@ -52,7 +52,7 @@
 		4C5BF3241C84DDF5000EE0E1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D717E7E125C63711004C4F31 /* ContentView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		D717E7E225C63711004C4F31 /* SceneDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		D717E7E325C63711004C4F31 /* MapView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapView.swift; sourceTree = "<group>"; };
+		D717E7E325C63711004C4F31 /* MapboxView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapboxView.swift; sourceTree = "<group>"; };
 		D717E7E425C63711004C4F31 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D71B67971C9C827300C6AA6A /* glyphs */ = {isa = PBXFileReference; lastKnownFileType = folder; path = glyphs; sourceTree = "<group>"; };
 		D71B67981C9C827300C6AA6A /* sprites */ = {isa = PBXFileReference; lastKnownFileType = folder; path = sprites; sourceTree = "<group>"; };
@@ -121,7 +121,7 @@
 			children = (
 				D717E7E425C63711004C4F31 /* AppDelegate.swift */,
 				D717E7E125C63711004C4F31 /* ContentView.swift */,
-				D717E7E325C63711004C4F31 /* MapView.swift */,
+				D717E7E325C63711004C4F31 /* MapboxView.swift */,
 				D717E7E225C63711004C4F31 /* SceneDelegate.swift */,
 				4C5BF31F1C84DDF5000EE0E1 /* Assets.xcassets */,
 				4C5BF3241C84DDF5000EE0E1 /* Info.plist */,
@@ -271,7 +271,7 @@
 			files = (
 				D717E7E825C63711004C4F31 /* AppDelegate.swift in Sources */,
 				D717E7E525C63711004C4F31 /* ContentView.swift in Sources */,
-				D717E7E725C63711004C4F31 /* MapView.swift in Sources */,
+				D717E7E725C63711004C4F31 /* MapboxView.swift in Sources */,
 				D717E7E625C63711004C4F31 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
