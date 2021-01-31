@@ -2,12 +2,48 @@
   "object": {
     "pins": [
       {
-        "package": "maplibre-gl-native",
-        "repositoryURL": "https://github.com/roblabs/maplibre-gl-native-distribution",
+        "package": "MapboxCommon",
+        "repositoryURL": "https://github.com/mapbox/mapbox-common-ios.git",
         "state": {
           "branch": null,
-          "revision": "7eaf6a9741e1a2bd698c4dfc4184cfa138f2aba3",
-          "version": "5.10.0"
+          "revision": "4ac87e66fe51917de3b8d3e7978490617ba76ec5",
+          "version": "10.0.0-beta.8"
+        }
+      },
+      {
+        "package": "MapboxCoreMaps",
+        "repositoryURL": "https://github.com/mapbox/mapbox-core-maps-ios.git",
+        "state": {
+          "branch": null,
+          "revision": "1ec368ec6e1ebf63eae0b456d0432a0eb1f44c0a",
+          "version": "10.0.0-beta.13"
+        }
+      },
+      {
+        "package": "MapboxMobileEvents",
+        "repositoryURL": "https://github.com/mapbox/mapbox-events-ios.git",
+        "state": {
+          "branch": null,
+          "revision": "13d72356759a883a98d2a3d28a39d07fdd02700c",
+          "version": "0.12.0-alpha.1"
+        }
+      },
+      {
+        "package": "MapboxMaps",
+        "repositoryURL": "https://github.com/mapbox/mapbox-maps-ios.git",
+        "state": {
+          "branch": null,
+          "revision": "ebf0eaba31ef6f00099c29430a8b1869b2420a24",
+          "version": "10.0.0-beta.12"
+        }
+      },
+      {
+        "package": "Turf",
+        "repositoryURL": "https://github.com/mapbox/turf-swift.git",
+        "state": {
+          "branch": null,
+          "revision": "5644ff7ac69b717528ffcc042c5fc7678f758b4a",
+          "version": "2.0.0-alpha.1"
         }
       }
     ]

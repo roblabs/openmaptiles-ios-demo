@@ -15,8 +15,7 @@
 		D717E7E825C63711004C4F31 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D717E7E425C63711004C4F31 /* AppDelegate.swift */; };
 		D71B679A1C9C827300C6AA6A /* glyphs in Resources */ = {isa = PBXBuildFile; fileRef = D71B67971C9C827300C6AA6A /* glyphs */; };
 		D71B679B1C9C827300C6AA6A /* sprites in Resources */ = {isa = PBXBuildFile; fileRef = D71B67981C9C827300C6AA6A /* sprites */; };
-		D76E35A025C0E72B004CCEBF /* MapboxMobileEvents in Frameworks */ = {isa = PBXBuildFile; productRef = D76E359F25C0E72B004CCEBF /* MapboxMobileEvents */; };
-		D76E35A225C0E72B004CCEBF /* Mapbox in Frameworks */ = {isa = PBXBuildFile; productRef = D76E35A125C0E72B004CCEBF /* Mapbox */; };
+		D78A88D925C6493100B1AE69 /* MapboxMaps in Frameworks */ = {isa = PBXBuildFile; productRef = D78A88D825C6493100B1AE69 /* MapboxMaps */; };
 		D7AAD8CF2395EB1D002BA6A3 /* OSM2VectorTilesUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7AAD8CE2395EB1D002BA6A3 /* OSM2VectorTilesUITests.swift */; };
 		FD137E021E08E259005C1849 /* styles in Resources */ = {isa = PBXBuildFile; fileRef = FD137E011E08E259005C1849 /* styles */; };
 		FD137E041E08E67E005C1849 /* geography-class.osm2vectortiles in Resources */ = {isa = PBXBuildFile; fileRef = FD137E031E08E67E005C1849 /* geography-class.osm2vectortiles */; };
@@ -72,8 +71,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D76E35A225C0E72B004CCEBF /* Mapbox in Frameworks */,
-				D76E35A025C0E72B004CCEBF /* MapboxMobileEvents in Frameworks */,
+				D78A88D925C6493100B1AE69 /* MapboxMaps in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -171,8 +169,7 @@
 			);
 			name = GeographyClass;
 			packageProductDependencies = (
-				D76E359F25C0E72B004CCEBF /* MapboxMobileEvents */,
-				D76E35A125C0E72B004CCEBF /* Mapbox */,
+				D78A88D825C6493100B1AE69 /* MapboxMaps */,
 			);
 			productName = OSM2VectorTiles;
 			productReference = 4C5BF3151C84DDF5000EE0E1 /* GeographyClass.app */;
@@ -229,7 +226,7 @@
 			);
 			mainGroup = 4C5BF30C1C84DDF5000EE0E1;
 			packageReferences = (
-				D76E359E25C0E72B004CCEBF /* XCRemoteSwiftPackageReference "maplibre-gl-native-distribution" */,
+				D78A88D725C6493100B1AE69 /* XCRemoteSwiftPackageReference "mapbox-maps-ios" */,
 			);
 			productRefGroup = 4C5BF3161C84DDF5000EE0E1 /* Products */;
 			projectDirPath = "";
@@ -433,7 +430,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = "1.341.1${XCS_INTEGRATION_NUMBER}";
-				PRODUCT_BUNDLE_IDENTIFIER = com.roblabs.papermaps.GeographyClass;
+				PRODUCT_BUNDLE_IDENTIFIER = com.roblabs.papermaps.GeographyClass.v10;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
@@ -460,7 +457,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = "1.341.1${XCS_INTEGRATION_NUMBER}";
-				PRODUCT_BUNDLE_IDENTIFIER = com.roblabs.papermaps.GeographyClass;
+				PRODUCT_BUNDLE_IDENTIFIER = com.roblabs.papermaps.GeographyClass.v10;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "";
 				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
@@ -561,26 +558,21 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
-		D76E359E25C0E72B004CCEBF /* XCRemoteSwiftPackageReference "maplibre-gl-native-distribution" */ = {
+		D78A88D725C6493100B1AE69 /* XCRemoteSwiftPackageReference "mapbox-maps-ios" */ = {
 			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/roblabs/maplibre-gl-native-distribution";
+			repositoryURL = "https://github.com/mapbox/mapbox-maps-ios.git";
 			requirement = {
 				kind = upToNextMajorVersion;
-				minimumVersion = 5.10.0;
+				minimumVersion = "10.0.0-beta.12";
 			};
 		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		D76E359F25C0E72B004CCEBF /* MapboxMobileEvents */ = {
+		D78A88D825C6493100B1AE69 /* MapboxMaps */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = D76E359E25C0E72B004CCEBF /* XCRemoteSwiftPackageReference "maplibre-gl-native-distribution" */;
-			productName = MapboxMobileEvents;
-		};
-		D76E35A125C0E72B004CCEBF /* Mapbox */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = D76E359E25C0E72B004CCEBF /* XCRemoteSwiftPackageReference "maplibre-gl-native-distribution" */;
-			productName = Mapbox;
+			package = D78A88D725C6493100B1AE69 /* XCRemoteSwiftPackageReference "mapbox-maps-ios" */;
+			productName = MapboxMaps;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};

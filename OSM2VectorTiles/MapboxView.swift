@@ -1,19 +1,21 @@
 import SwiftUI
-import Mapbox
+import MapboxMaps
 
 struct MapboxView: UIViewRepresentable {
 
-    private let mapView: MGLMapView = MGLMapView(frame: .zero, styleURL: MGLStyle.streetsStyleURL)
+    var mapView = MapView(with: .zero, resourceOptions: ResourceOptions(accessToken: "token"))
     
     // MARK: - Configuring UIViewRepresentable protocol
     
-    func makeUIView(context: Context) -> MGLMapView {
-        mapView.delegate = context.coordinator
-        mapView.logoView.isHidden = true
+    func makeUIView(context: Context) -> MapView {
         return mapView
     }
     
-    func updateUIView(_ uiView: MGLMapView, context: Context) {
+    func updateUIView(_ uiView: MapView, context: Context) {
+        mapView.style.styleURL = StyleURL.dark
+        mapView.update { (mapOptions) in
+            mapOptions.ornaments.showsScale = true
+        }
 
         let localStyle = "asset://styles/geography-class-local.json"
         let _ = setStyle(localStyle)
@@ -23,66 +25,32 @@ struct MapboxView: UIViewRepresentable {
         Coordinator(self)
     }
     
-    // MARK: - Configuring MGLMapView
+    // MARK: - Configuring MapboxView
     
     /// Set the Map Style by string
     /// - parameter styleURL
     func setStyle(_ styleURL: String) -> MapboxView {
-        mapView.styleURL = URL(string: styleURL)
+        mapView.style.styleURL = StyleURL.custom(url: URL(string: styleURL)!)
         return self
     }
     
     func centerCoordinate(_ centerCoordinate: CLLocationCoordinate2D) -> MapboxView {
-        mapView.centerCoordinate = centerCoordinate
+        mapView.cameraManager.setCamera(to: CameraOptions(center: centerCoordinate))
         return self
     }
     
-    func zoomLevel(_ zoomLevel: Double) -> MapboxView {
-        mapView.zoomLevel = zoomLevel
+    func zoomLevel(_ zoom: CGFloat) -> MapboxView {
+        mapView.cameraManager.setCamera(to: CameraOptions(zoom: zoom))
         return self
     }
     
     // MARK: - Implementing MGLMapViewDelegate
     
-    final class Coordinator: NSObject, MGLMapViewDelegate {
+    final class Coordinator: NSObject, MBMMapViewDelegate {
         var control: MapboxView
         
         init(_ control: MapboxView) {
             self.control = control
         }
-        
-        func mapView(_ mapView: MGLMapView, didFinishLoading style: MGLStyle) {
-            
-            let coordinates = [
-                CLLocationCoordinate2D(latitude: 37.791329, longitude: -122.396906),
-                CLLocationCoordinate2D(latitude: 37.791591, longitude: -122.396566),
-                CLLocationCoordinate2D(latitude: 37.791147, longitude: -122.396009),
-                CLLocationCoordinate2D(latitude: 37.790883, longitude: -122.396349),
-                CLLocationCoordinate2D(latitude: 37.791329, longitude: -122.396906),
-            ]
-            
-            let buildingFeature = MGLPolygonFeature(coordinates: coordinates, count: 5)
-            let shapeSource = MGLShapeSource(identifier: "buildingSource", features: [buildingFeature], options: nil)
-            mapView.style?.addSource(shapeSource)
-            
-            let fillLayer = MGLFillStyleLayer(identifier: "buildingFillLayer", source: shapeSource)
-            fillLayer.fillColor = NSExpression(forConstantValue: UIColor.blue)
-            fillLayer.fillOpacity = NSExpression(forConstantValue: 0.5)
-            
-            mapView.style?.addLayer(fillLayer)
-
-        }
-        
-        func mapView(_ mapView: MGLMapView, viewFor annotation: MGLAnnotation) -> MGLAnnotationView? {
-            return nil
-        }
-         
-        func mapView(_ mapView: MGLMapView, annotationCanShowCallout annotation: MGLAnnotation) -> Bool {
-            return true
-        }
-        
     }
-    
 }
-
-
