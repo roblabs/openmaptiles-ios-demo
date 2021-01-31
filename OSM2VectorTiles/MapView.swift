@@ -1,17 +1,8 @@
 import SwiftUI
 import Mapbox
 
-extension MGLPointAnnotation {
-    convenience init(title: String, coordinate: CLLocationCoordinate2D) {
-        self.init()
-        self.title = title
-        self.coordinate = coordinate
-    }
-}
-
 struct MapView: UIViewRepresentable {
-    @Binding var annotations: [MGLPointAnnotation]
-    
+
     private let mapView: MGLMapView = MGLMapView(frame: .zero, styleURL: MGLStyle.streetsStyleURL)
     
     // MARK: - Configuring UIViewRepresentable protocol
@@ -50,13 +41,6 @@ struct MapView: UIViewRepresentable {
     func zoomLevel(_ zoomLevel: Double) -> MapView {
         mapView.zoomLevel = zoomLevel
         return self
-    }
-    
-    private func updateAnnotations() {
-        if let currentAnnotations = mapView.annotations {
-            mapView.removeAnnotations(currentAnnotations)
-        }
-        mapView.addAnnotations(annotations)
     }
     
     // MARK: - Implementing MGLMapViewDelegate
