@@ -9,15 +9,14 @@ struct MapView: UIViewRepresentable {
     
     func makeUIView(context: UIViewRepresentableContext<MapView>) -> MGLMapView {
         mapView.delegate = context.coordinator
+        mapView.logoView.isHidden = true
         return mapView
     }
     
     func updateUIView(_ uiView: MGLMapView, context: UIViewRepresentableContext<MapView>) {
 
-        /// Update Style using Raster sources from https://github.com/roblabs/xyz-raster-sources
-        let xyzRasterStyle = "https://raw.githubusercontent.com/roblabs/xyz-raster-sources/master/style.json"
-        let _ = setStyle(xyzRasterStyle)
-        updateAnnotations()
+        let localStyle = "asset://styles/geography-class-local.json"
+        let _ = setStyle(localStyle)
     }
     
     func makeCoordinator() -> MapView.Coordinator {
