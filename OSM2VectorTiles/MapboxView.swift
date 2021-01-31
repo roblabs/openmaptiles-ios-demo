@@ -7,13 +7,13 @@ struct MapboxView: UIViewRepresentable {
     
     // MARK: - Configuring UIViewRepresentable protocol
     
-    func makeUIView(context: UIViewRepresentableContext<MapboxView>) -> MGLMapView {
+    func makeUIView(context: Context) -> MGLMapView {
         mapView.delegate = context.coordinator
         mapView.logoView.isHidden = true
         return mapView
     }
     
-    func updateUIView(_ uiView: MGLMapView, context: UIViewRepresentableContext<MapboxView>) {
+    func updateUIView(_ uiView: MGLMapView, context: Context) {
 
         let localStyle = "asset://styles/geography-class-local.json"
         let _ = setStyle(localStyle)
