@@ -46,7 +46,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		4C5BF3151C84DDF5000EE0E1 /* OSM2VectorTiles.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OSM2VectorTiles.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		4C5BF3151C84DDF5000EE0E1 /* GeographyClass.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GeographyClass.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4C5BF31F1C84DDF5000EE0E1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4C5BF3221C84DDF5000EE0E1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		4C5BF3241C84DDF5000EE0E1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -99,6 +99,7 @@
 			isa = PBXGroup;
 			children = (
 				FD184C7E1E3FBAEE007CC408 /* readme.md */,
+				D71B67A11CA08A0A00C6AA6A /* Resources */,
 				4C5BF3171C84DDF5000EE0E1 /* OSM2VectorTiles */,
 				D7AAD8CD2395EB1D002BA6A3 /* OSM2VectorTilesUITests */,
 				4C5BF3161C84DDF5000EE0E1 /* Products */,
@@ -109,7 +110,7 @@
 		4C5BF3161C84DDF5000EE0E1 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				4C5BF3151C84DDF5000EE0E1 /* OSM2VectorTiles.app */,
+				4C5BF3151C84DDF5000EE0E1 /* GeographyClass.app */,
 				D7AAD8CC2395EB1D002BA6A3 /* OSM2VectorTilesUITests.xctest */,
 			);
 			name = Products;
@@ -123,7 +124,6 @@
 				D717E7E325C63711004C4F31 /* MapView.swift */,
 				D717E7E225C63711004C4F31 /* SceneDelegate.swift */,
 				4C5BF31F1C84DDF5000EE0E1 /* Assets.xcassets */,
-				D71B67A11CA08A0A00C6AA6A /* Resources */,
 				4C5BF3241C84DDF5000EE0E1 /* Info.plist */,
 				4C5BF3211C84DDF5000EE0E1 /* LaunchScreen.storyboard */,
 			);
@@ -140,6 +140,7 @@
 				D71B67971C9C827300C6AA6A /* glyphs */,
 			);
 			name = Resources;
+			path = OSM2VectorTiles;
 			sourceTree = "<group>";
 		};
 		D7AAD8CD2395EB1D002BA6A3 /* OSM2VectorTilesUITests */ = {
@@ -155,9 +156,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		4C5BF3141C84DDF5000EE0E1 /* OSM2VectorTiles */ = {
+		4C5BF3141C84DDF5000EE0E1 /* GeographyClass */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 4C5BF3271C84DDF5000EE0E1 /* Build configuration list for PBXNativeTarget "OSM2VectorTiles" */;
+			buildConfigurationList = 4C5BF3271C84DDF5000EE0E1 /* Build configuration list for PBXNativeTarget "GeographyClass" */;
 			buildPhases = (
 				4C5BF3111C84DDF5000EE0E1 /* Sources */,
 				4C5BF3121C84DDF5000EE0E1 /* Frameworks */,
@@ -168,13 +169,13 @@
 			);
 			dependencies = (
 			);
-			name = OSM2VectorTiles;
+			name = GeographyClass;
 			packageProductDependencies = (
 				D76E359F25C0E72B004CCEBF /* MapboxMobileEvents */,
 				D76E35A125C0E72B004CCEBF /* Mapbox */,
 			);
 			productName = OSM2VectorTiles;
-			productReference = 4C5BF3151C84DDF5000EE0E1 /* OSM2VectorTiles.app */;
+			productReference = 4C5BF3151C84DDF5000EE0E1 /* GeographyClass.app */;
 			productType = "com.apple.product-type.application";
 		};
 		D7AAD8CB2395EB1D002BA6A3 /* OSM2VectorTilesUITests */ = {
@@ -234,7 +235,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				4C5BF3141C84DDF5000EE0E1 /* OSM2VectorTiles */,
+				4C5BF3141C84DDF5000EE0E1 /* GeographyClass */,
 				D7AAD8CB2395EB1D002BA6A3 /* OSM2VectorTilesUITests */,
 			);
 		};
@@ -288,7 +289,7 @@
 /* Begin PBXTargetDependency section */
 		D7AAD8D22395EB1D002BA6A3 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 4C5BF3141C84DDF5000EE0E1 /* OSM2VectorTiles */;
+			target = 4C5BF3141C84DDF5000EE0E1 /* GeographyClass */;
 			targetProxy = D7AAD8D12395EB1D002BA6A3 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -539,7 +540,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		4C5BF3271C84DDF5000EE0E1 /* Build configuration list for PBXNativeTarget "OSM2VectorTiles" */ = {
+		4C5BF3271C84DDF5000EE0E1 /* Build configuration list for PBXNativeTarget "GeographyClass" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				4C5BF3281C84DDF5000EE0E1 /* Debug */,

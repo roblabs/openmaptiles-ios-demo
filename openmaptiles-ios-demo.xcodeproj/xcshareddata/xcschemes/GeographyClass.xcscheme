@@ -15,8 +15,8 @@
                   <BuildableReference
                      BuildableIdentifier = "primary"
                      BlueprintIdentifier = "4C5BF3141C84DDF5000EE0E1"
-                     BuildableName = "OSM2VectorTiles.app"
-                     BlueprintName = "OSM2VectorTiles"
+                     BuildableName = "GeographyClass.app"
+                     BlueprintName = "GeographyClass"
                      ReferencedContainer = "container:openmaptiles-ios-demo.xcodeproj">
                   </BuildableReference>
                </EnvironmentBuildable>
@@ -33,8 +33,8 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "4C5BF3141C84DDF5000EE0E1"
-               BuildableName = "OSM2VectorTiles.app"
-               BlueprintName = "OSM2VectorTiles"
+               BuildableName = "GeographyClass.app"
+               BlueprintName = "GeographyClass"
                ReferencedContainer = "container:openmaptiles-ios-demo.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
@@ -79,8 +79,8 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "4C5BF3141C84DDF5000EE0E1"
-            BuildableName = "OSM2VectorTiles.app"
-            BlueprintName = "OSM2VectorTiles"
+            BuildableName = "GeographyClass.app"
+            BlueprintName = "GeographyClass"
             ReferencedContainer = "container:openmaptiles-ios-demo.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
@@ -96,8 +96,8 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "4C5BF3141C84DDF5000EE0E1"
-            BuildableName = "OSM2VectorTiles.app"
-            BlueprintName = "OSM2VectorTiles"
+            BuildableName = "GeographyClass.app"
+            BlueprintName = "GeographyClass"
             ReferencedContainer = "container:openmaptiles-ios-demo.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>

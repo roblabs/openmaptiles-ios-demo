@@ -137,6 +137,11 @@ tsgl --config tileserver-gl/config.geography-class.json
 
 ### Change Log
 
+* Jan 30, 2021
+  * Convert to Offline Maps with SwiftUI.  Local style with local tiles.
+  * Rename project to Geography Class
+  * Minimum iOS is 13.0
+  * Tested with Xcode 12.4
 * Jan 26, 2021
   * Update to MapLibre.  https://github.com/maptiler/maplibre-gl-native-distribution/pull/2
   * Remove references to Carthage.  See the branch `carthage`, if needed.
