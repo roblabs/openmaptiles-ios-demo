@@ -7,17 +7,17 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		4C5BF3191C84DDF5000EE0E1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C5BF3181C84DDF5000EE0E1 /* AppDelegate.swift */; };
-		4C5BF31B1C84DDF5000EE0E1 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C5BF31A1C84DDF5000EE0E1 /* ViewController.swift */; };
-		4C5BF31E1C84DDF5000EE0E1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4C5BF31C1C84DDF5000EE0E1 /* Main.storyboard */; };
 		4C5BF3201C84DDF5000EE0E1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4C5BF31F1C84DDF5000EE0E1 /* Assets.xcassets */; };
 		4C5BF3231C84DDF5000EE0E1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4C5BF3211C84DDF5000EE0E1 /* LaunchScreen.storyboard */; };
+		D717E7E525C63711004C4F31 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D717E7E125C63711004C4F31 /* ContentView.swift */; };
+		D717E7E625C63711004C4F31 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D717E7E225C63711004C4F31 /* SceneDelegate.swift */; };
+		D717E7E725C63711004C4F31 /* MapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D717E7E325C63711004C4F31 /* MapView.swift */; };
+		D717E7E825C63711004C4F31 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D717E7E425C63711004C4F31 /* AppDelegate.swift */; };
 		D71B679A1C9C827300C6AA6A /* glyphs in Resources */ = {isa = PBXBuildFile; fileRef = D71B67971C9C827300C6AA6A /* glyphs */; };
 		D71B679B1C9C827300C6AA6A /* sprites in Resources */ = {isa = PBXBuildFile; fileRef = D71B67981C9C827300C6AA6A /* sprites */; };
 		D76E35A025C0E72B004CCEBF /* MapboxMobileEvents in Frameworks */ = {isa = PBXBuildFile; productRef = D76E359F25C0E72B004CCEBF /* MapboxMobileEvents */; };
 		D76E35A225C0E72B004CCEBF /* Mapbox in Frameworks */ = {isa = PBXBuildFile; productRef = D76E35A125C0E72B004CCEBF /* Mapbox */; };
 		D7AAD8CF2395EB1D002BA6A3 /* OSM2VectorTilesUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7AAD8CE2395EB1D002BA6A3 /* OSM2VectorTilesUITests.swift */; };
-		D7B2C58D24B27DEA00CFEA39 /* ViewController_Preview.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7B2C58C24B27DE900CFEA39 /* ViewController_Preview.swift */; };
 		FD137E021E08E259005C1849 /* styles in Resources */ = {isa = PBXBuildFile; fileRef = FD137E011E08E259005C1849 /* styles */; };
 		FD137E041E08E67E005C1849 /* geography-class.osm2vectortiles in Resources */ = {isa = PBXBuildFile; fileRef = FD137E031E08E67E005C1849 /* geography-class.osm2vectortiles */; };
 /* End PBXBuildFile section */
@@ -47,19 +47,19 @@
 
 /* Begin PBXFileReference section */
 		4C5BF3151C84DDF5000EE0E1 /* OSM2VectorTiles.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OSM2VectorTiles.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		4C5BF3181C84DDF5000EE0E1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		4C5BF31A1C84DDF5000EE0E1 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		4C5BF31D1C84DDF5000EE0E1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		4C5BF31F1C84DDF5000EE0E1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4C5BF3221C84DDF5000EE0E1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		4C5BF3241C84DDF5000EE0E1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D717E7E125C63711004C4F31 /* ContentView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		D717E7E225C63711004C4F31 /* SceneDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		D717E7E325C63711004C4F31 /* MapView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapView.swift; sourceTree = "<group>"; };
+		D717E7E425C63711004C4F31 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D71B67971C9C827300C6AA6A /* glyphs */ = {isa = PBXFileReference; lastKnownFileType = folder; path = glyphs; sourceTree = "<group>"; };
 		D71B67981C9C827300C6AA6A /* sprites */ = {isa = PBXFileReference; lastKnownFileType = folder; path = sprites; sourceTree = "<group>"; };
 		D71B67A41CA0946700C6AA6A /* geography-class.mbtiles */ = {isa = PBXFileReference; lastKnownFileType = file; path = "geography-class.mbtiles"; sourceTree = "<group>"; };
 		D7AAD8CC2395EB1D002BA6A3 /* OSM2VectorTilesUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = OSM2VectorTilesUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D7AAD8CE2395EB1D002BA6A3 /* OSM2VectorTilesUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OSM2VectorTilesUITests.swift; sourceTree = "<group>"; };
 		D7AAD8D02395EB1D002BA6A3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		D7B2C58C24B27DE900CFEA39 /* ViewController_Preview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController_Preview.swift; sourceTree = "<group>"; };
 		D7CC50CD2486E0610001AA89 /* Mapbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Mapbox.framework; path = Carthage/Build/iOS/Mapbox.framework; sourceTree = "<group>"; };
 		D7FD07362486E5F000738B0A /* OSM2VectorTiles.xctestplan */ = {isa = PBXFileReference; lastKnownFileType = text; path = OSM2VectorTiles.xctestplan; sourceTree = "<group>"; };
 		FD137E011E08E259005C1849 /* styles */ = {isa = PBXFileReference; lastKnownFileType = folder; path = styles; sourceTree = "<group>"; };
@@ -99,7 +99,6 @@
 			isa = PBXGroup;
 			children = (
 				FD184C7E1E3FBAEE007CC408 /* readme.md */,
-				D7B2C58E24B27E3E00CFEA39 /* SwiftUI-Previews */,
 				4C5BF3171C84DDF5000EE0E1 /* OSM2VectorTiles */,
 				D7AAD8CD2395EB1D002BA6A3 /* OSM2VectorTilesUITests */,
 				4C5BF3161C84DDF5000EE0E1 /* Products */,
@@ -119,12 +118,13 @@
 		4C5BF3171C84DDF5000EE0E1 /* OSM2VectorTiles */ = {
 			isa = PBXGroup;
 			children = (
+				D717E7E425C63711004C4F31 /* AppDelegate.swift */,
+				D717E7E125C63711004C4F31 /* ContentView.swift */,
+				D717E7E325C63711004C4F31 /* MapView.swift */,
+				D717E7E225C63711004C4F31 /* SceneDelegate.swift */,
 				4C5BF31F1C84DDF5000EE0E1 /* Assets.xcassets */,
 				D71B67A11CA08A0A00C6AA6A /* Resources */,
-				4C5BF3181C84DDF5000EE0E1 /* AppDelegate.swift */,
-				4C5BF31A1C84DDF5000EE0E1 /* ViewController.swift */,
 				4C5BF3241C84DDF5000EE0E1 /* Info.plist */,
-				4C5BF31C1C84DDF5000EE0E1 /* Main.storyboard */,
 				4C5BF3211C84DDF5000EE0E1 /* LaunchScreen.storyboard */,
 			);
 			path = OSM2VectorTiles;
@@ -150,14 +150,6 @@
 				D7AAD8D02395EB1D002BA6A3 /* Info.plist */,
 			);
 			path = OSM2VectorTilesUITests;
-			sourceTree = "<group>";
-		};
-		D7B2C58E24B27E3E00CFEA39 /* SwiftUI-Previews */ = {
-			isa = PBXGroup;
-			children = (
-				D7B2C58C24B27DE900CFEA39 /* ViewController_Preview.swift */,
-			);
-			path = "SwiftUI-Previews";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -216,7 +208,7 @@
 					4C5BF3141C84DDF5000EE0E1 = {
 						CreatedOnToolsVersion = 7.2.1;
 						DevelopmentTeam = J7V35W7ES8;
-						LastSwiftMigration = 1120;
+						LastSwiftMigration = 1240;
 					};
 					D7AAD8CB2395EB1D002BA6A3 = {
 						CreatedOnToolsVersion = 11.2.1;
@@ -257,7 +249,6 @@
 				FD137E041E08E67E005C1849 /* geography-class.osm2vectortiles in Resources */,
 				4C5BF3201C84DDF5000EE0E1 /* Assets.xcassets in Resources */,
 				FD137E021E08E259005C1849 /* styles in Resources */,
-				4C5BF31E1C84DDF5000EE0E1 /* Main.storyboard in Resources */,
 				D71B679B1C9C827300C6AA6A /* sprites in Resources */,
 				D71B679A1C9C827300C6AA6A /* glyphs in Resources */,
 			);
@@ -277,9 +268,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4C5BF31B1C84DDF5000EE0E1 /* ViewController.swift in Sources */,
-				4C5BF3191C84DDF5000EE0E1 /* AppDelegate.swift in Sources */,
-				D7B2C58D24B27DEA00CFEA39 /* ViewController_Preview.swift in Sources */,
+				D717E7E825C63711004C4F31 /* AppDelegate.swift in Sources */,
+				D717E7E525C63711004C4F31 /* ContentView.swift in Sources */,
+				D717E7E725C63711004C4F31 /* MapView.swift in Sources */,
+				D717E7E625C63711004C4F31 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -302,14 +294,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		4C5BF31C1C84DDF5000EE0E1 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				4C5BF31D1C84DDF5000EE0E1 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		4C5BF3211C84DDF5000EE0E1 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -434,6 +418,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CURRENT_PROJECT_VERSION = "1${XCS_INTEGRATION_NUMBER}";
 				DEVELOPMENT_TEAM = J7V35W7ES8;
 				FRAMEWORK_SEARCH_PATHS = (
@@ -441,7 +426,7 @@
 					"$(PROJECT_DIR)",
 				);
 				INFOPLIST_FILE = OSM2VectorTiles/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -449,6 +434,8 @@
 				MARKETING_VERSION = "1.341.1${XCS_INTEGRATION_NUMBER}";
 				PRODUCT_BUNDLE_IDENTIFIER = com.roblabs.papermaps.GeographyClass;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
 				SWIFT_VERSION = 5.0;
 			};
@@ -458,6 +445,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CURRENT_PROJECT_VERSION = "1${XCS_INTEGRATION_NUMBER}";
 				DEVELOPMENT_TEAM = J7V35W7ES8;
 				FRAMEWORK_SEARCH_PATHS = (
@@ -465,7 +453,7 @@
 					"$(PROJECT_DIR)",
 				);
 				INFOPLIST_FILE = OSM2VectorTiles/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -473,6 +461,7 @@
 				MARKETING_VERSION = "1.341.1${XCS_INTEGRATION_NUMBER}";
 				PRODUCT_BUNDLE_IDENTIFIER = com.roblabs.papermaps.GeographyClass;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "";
 				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
 				SWIFT_VERSION = 5.0;
 			};
@@ -481,6 +470,7 @@
 		D7AAD8D32395EB1D002BA6A3 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
@@ -511,6 +501,7 @@
 		D7AAD8D42395EB1D002BA6A3 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
