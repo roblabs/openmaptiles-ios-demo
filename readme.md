@@ -73,6 +73,9 @@ open openmaptiles-ios-demo.xcodeproj
 
 You can Soft Proof your tiles before they are installed into mobile by using [Tileserver GL](https://github.com/maptiler/tileserver-gl#readme).
 
+* Discussion on whether `.pbf` can be compressed when using `tippecanoe`:  [mapbox / tippecanoe #582](https://github.com/mapbox/tippecanoe/issues/582)
+  * `tippecanoe -pC --maximum-zoom=7 -o poly.pC.mbtiles poly.geojson`
+
 ```
 # Install `serve` from https://www.npmjs.com/package/serve
 #  yarn global add serve   # do this once
@@ -134,6 +137,27 @@ tsgl --config tileserver-gl/config.geography-class.json
 * (QuickTime has a bug when screen recording; as it still shows WiFi service is on, when it indeed is off)
 
 ---
+
+## Building
+
+You can build the Mapbox Maps `v10` version by checking out the tag `v10-geography-class`
+
+```bash
+export REPO=roblabs/openmaptiles-ios-demo
+
+git clone --recursive \
+  https://github.com/$REPO.git \
+  tmp/$REPO
+
+cd tmp/$REPO
+
+TAG=v10-geography-class
+git checkout tags/$TAG -b $TAG
+```
+
+```
+xed .
+```
 
 ### Change Log
 
