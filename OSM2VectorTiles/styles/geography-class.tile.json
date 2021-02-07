@@ -1,0 +1,10 @@
+{
+  "tilejson": "2.2.0",
+  "description": "A simple, light grey world.",
+  "version": "1.0.0",
+  "type": "vector",
+  "test": "wget --spider http://localhost:5000/geography-class.osm2vectortiles/0/0/0.pbf",
+  "tiles": [
+    "http://localhost:5000/geography-class.osm2vectortiles/{z}/{x}/{y}.pbf"
+  ]
+}

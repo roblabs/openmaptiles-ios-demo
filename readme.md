@@ -76,6 +76,11 @@ You can Soft Proof your tiles before they are installed into mobile by using [Ti
 * Discussion on whether `.pbf` can be compressed when using `tippecanoe`:  [mapbox / tippecanoe #582](https://github.com/mapbox/tippecanoe/issues/582)
   * `tippecanoe -pC --maximum-zoom=7 -o poly.pC.mbtiles poly.geojson`
 
+* See the sample Tile JSON under styles [`geography-class.tile.json`](https://raw.githubusercontent.com/roblabs/openmaptiles-ios-demo/master/OSM2VectorTiles/styles/geography-class.tile.json)
+  * useful for use with [Maputnik](https://maputnik.github.io/editor/) or [Fresco](https://fresco.gospatial.org)
+  * also an example to test your web server is serving up proper uncompressed `.pbf`
+    * `wget --spider http://localhost:5000/geography-class.osm2vectortiles/0/0/0.pbf`
+
 ```
 # Install `serve` from https://www.npmjs.com/package/serve
 #  yarn global add serve   # do this once
