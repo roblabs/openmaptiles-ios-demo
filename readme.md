@@ -25,14 +25,14 @@ The [MapLibre Mobile SDK](https://github.com/maptiler/maplibre-gl-native-distrib
 
 ~~~
 # Build
-xcodebuild -scheme OSM2VectorTiles build
+xcodebuild -scheme GeographyClass build
 
 # Test
-xcodebuild -scheme OSM2VectorTiles test \
+xcodebuild -scheme GeographyClass test \
   -destination 'platform=iOS Simulator,name=iPhone 8'
 
 # Test without building
-xcodebuild -scheme OSM2VectorTiles test-without-building   \
+xcodebuild -scheme GeographyClass test-without-building   \
   -destination 'platform=iOS Simulator,name=iPhone 11 Pro' \
   -destination 'platform=iOS,name=iPhone 8' \
 ~~~
