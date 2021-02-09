@@ -76,10 +76,25 @@ You can Soft Proof your tiles before they are installed into mobile by using [Ti
 * Discussion on whether `.pbf` can be compressed when using `tippecanoe`:  [mapbox / tippecanoe #582](https://github.com/mapbox/tippecanoe/issues/582)
   * `tippecanoe -pC --maximum-zoom=7 -o poly.pC.mbtiles poly.geojson`
 
-* See the sample Tile JSON under styles [`geography-class.tile.json`](https://raw.githubusercontent.com/roblabs/openmaptiles-ios-demo/master/OSM2VectorTiles/styles/geography-class.tile.json)
-  * useful for use with [Maputnik](https://maputnik.github.io/editor/) or [Fresco](https://fresco.gospatial.org)
+### Sample Tile JSON
+
+[Tile JSON][tileJSON] with GitHub served `.pbf`
+
+* [geography-class.GitHub.json][geography-class.GitHub.json]
+
+
+Locally served `.pbf`
+
+* See the sample Tile JSON [geography-class.localhost.json][geography-class.localhost.json]
+  * useful for use with [Maputnik][Maputnik] or [Fresco][Fresco]
   * also an example to test your web server is serving up proper uncompressed `.pbf`
     * `wget --spider http://localhost:5000/geography-class.osm2vectortiles/0/0/0.pbf`
+
+[tileJSON]: https://github.com/mapbox/tilejson-spec/tree/master/2.2.0#2-file-format
+[geography-class.localhost.json]: https://raw.githubusercontent.com/roblabs/openmaptiles-ios-demo/master/OSM2VectorTiles/tileJSON/geography-class.localhost.json
+[geography-class.GitHub.json]: https://raw.githubusercontent.com/roblabs/openmaptiles-ios-demo/master/OSM2VectorTiles/tileJSON/geography-class.GitHub.json
+[Maputnik]: https://maputnik.github.io/editor/
+[Fresco]: https://fresco.gospatial.org
 
 ```
 # Install `serve` from https://www.npmjs.com/package/serve

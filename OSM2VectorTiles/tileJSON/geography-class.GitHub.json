@@ -1,0 +1,9 @@
+{
+  "tilejson": "2.2.0",
+  "description": "Geography Class served from GitHub",
+  "version": "1.0.0",
+  "type": "vector",
+  "tiles": [
+    "https://raw.githubusercontent.com/roblabs/openmaptiles-ios-demo/master/OSM2VectorTiles/geography-class.osm2vectortiles/{z}/{x}/{y}.pbf"
+  ]
+}
