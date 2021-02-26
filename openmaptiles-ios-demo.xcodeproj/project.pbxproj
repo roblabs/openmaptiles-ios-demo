@@ -433,7 +433,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = "1.341.1${XCS_INTEGRATION_NUMBER}";
-				PRODUCT_BUNDLE_IDENTIFIER = com.roblabs.papermaps.GeographyClass;
+				PRODUCT_BUNDLE_IDENTIFIER = com.roblabs.GeographyClass;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
@@ -460,7 +460,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = "1.341.1${XCS_INTEGRATION_NUMBER}";
-				PRODUCT_BUNDLE_IDENTIFIER = com.roblabs.papermaps.GeographyClass;
+				PRODUCT_BUNDLE_IDENTIFIER = com.roblabs.GeographyClass;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "";
 				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
