@@ -3,7 +3,7 @@
 //  OSM2VectorTilesUITests
 //
 //  Created by Rob Labs on 12/13/19.
-//  Copyright © 2019, 2020 ePi Rational, Inc.. All rights reserved.
+//  Copyright © 2019-2021 ePi Rational, Inc.. All rights reserved.
 //
 
 import XCTest
@@ -30,13 +30,24 @@ class OSM2VectorTilesUITests: XCTestCase {
         app.terminate()
     }
     
+    func screenshot(name: String) {
+        let screenshot = XCUIScreen.main.screenshot()
+        let attachment = XCTAttachment(screenshot: screenshot)
+        attachment.lifetime = .keepAlways
+        attachment.name = name
+        add(attachment)
+    }
+    
     func testPrintAccessibilityHierarchy() {
         print(app.debugDescription)
     }
     
-    func testInfo() {
-        app/*@START_MENU_TOKEN@*/.buttons["About this map"]/*[[".otherElements[\"Map\"].buttons[\"About this map\"]",".buttons[\"About this map\"]"],[[[-1,1],[-1,0]]],[0]]@END_MENU_TOKEN@*/.tap()
-        app.sheets["Mapbox Maps SDK for iOS"].scrollViews.otherElements.buttons["Cancel"].tap()
+    /// Long Press on Info Button
+    func testInfoButtonVersion() {
+        let aboutThisMapButton = app/*@START_MENU_TOKEN@*/.buttons["About this map"]/*[[".otherElements[\"Map\"].buttons[\"About this map\"]",".buttons[\"About this map\"]"],[[[-1,1],[-1,0]]],[0]]@END_MENU_TOKEN@*/
+        aboutThisMapButton/*@START_MENU_TOKEN@*/.press(forDuration: 1.3);/*[[".tap()",".press(forDuration: 1.3);"],[[[-1,1],[-1,0]]],[0]]@END_MENU_TOKEN@*/
+        sleep(UInt32(0.5))
+        screenshot(name: "InfoButtonVersion")
     }
     
     func testCompass() {
