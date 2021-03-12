@@ -76,23 +76,25 @@ You can Soft Proof your tiles before they are installed into mobile by using [Ti
 * Discussion on whether `.pbf` can be compressed when using `tippecanoe`:  [mapbox / tippecanoe #582](https://github.com/mapbox/tippecanoe/issues/582)
   * `tippecanoe -pC --maximum-zoom=7 -o poly.pC.mbtiles poly.geojson`
 
-### Sample Tile JSON
+### Sample Tile JSON & Styles
 
-[Tile JSON][tileJSON] with GitHub served `.pbf`
+[Tile JSON][tileJSON] with GitHub served `.pbf`.  Choose either the Tile JSON or Mapbox Style
 
-* [geography-class.GitHub.json][geography-class.GitHub.json]
+* [tileJSON/geography-class.GitHub.json][tileJSON/geography-class.GitHub.json]
+* [styles/geography-class.GitHub.json][styles/geography-class.GitHub.json]
 
 
 Locally served `.pbf`
 
-* See the sample Tile JSON [geography-class.localhost.json][geography-class.localhost.json]
+* See the sample Tile JSON [tileJSON/geography-class.localhost.json][tileJSON/geography-class.localhost.json]
   * useful for use with [Maputnik][Maputnik] or [Fresco][Fresco]
   * also an example to test your web server is serving up proper uncompressed `.pbf`
     * `wget --spider http://localhost:5000/geography-class.osm2vectortiles/0/0/0.pbf`
 
 [tileJSON]: https://github.com/mapbox/tilejson-spec/tree/master/2.2.0#2-file-format
-[geography-class.localhost.json]: https://raw.githubusercontent.com/roblabs/openmaptiles-ios-demo/master/OSM2VectorTiles/tileJSON/geography-class.localhost.json
-[geography-class.GitHub.json]: https://raw.githubusercontent.com/roblabs/openmaptiles-ios-demo/master/OSM2VectorTiles/tileJSON/geography-class.GitHub.json
+[tileJSON/geography-class.localhost.json]: https://raw.githubusercontent.com/roblabs/openmaptiles-ios-demo/master/OSM2VectorTiles/tileJSON/geography-class.localhost.json
+[tileJSON/geography-class.GitHub.json]: https://raw.githubusercontent.com/roblabs/openmaptiles-ios-demo/master/OSM2VectorTiles/tileJSON/geography-class.GitHub.json
+[styles/geography-class.GitHub.json]: https://raw.githubusercontent.com/roblabs/openmaptiles-ios-demo/master/OSM2VectorTiles/styles/geography-class.GitHub.json
 [Maputnik]: https://maputnik.github.io/editor/
 [Fresco]: https://fresco.gospatial.org
 
@@ -181,6 +183,8 @@ xed .
 
 ### Change Log
 
+* Mar 12, 2021
+  * Upgrade MapLibre for iOS from `5.10.0` to `5.11.0`
 * Jan 30, 2021
   * Convert to Offline Maps with SwiftUI.  Local style with local tiles using the protocol `asset://`
   * branch: `mapbox-maps-ios-v10` updated with MapboxMaps Library from https://github.com/mapbox/mapbox-maps-ios
