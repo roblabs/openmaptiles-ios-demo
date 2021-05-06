@@ -15,6 +15,7 @@
 		D717E7E825C63711004C4F31 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D717E7E425C63711004C4F31 /* AppDelegate.swift */; };
 		D71B679A1C9C827300C6AA6A /* glyphs in Resources */ = {isa = PBXBuildFile; fileRef = D71B67971C9C827300C6AA6A /* glyphs */; };
 		D71B679B1C9C827300C6AA6A /* sprites in Resources */ = {isa = PBXBuildFile; fileRef = D71B67981C9C827300C6AA6A /* sprites */; };
+		D76C6E0126448F7600BFF6C9 /* MetalANGLE in Frameworks */ = {isa = PBXBuildFile; productRef = D76C6E0026448F7600BFF6C9 /* MetalANGLE */; };
 		D7AAD8CF2395EB1D002BA6A3 /* OSM2VectorTilesUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7AAD8CE2395EB1D002BA6A3 /* OSM2VectorTilesUITests.swift */; };
 		D7DEFCC625FBF52F003CC631 /* Mapbox in Frameworks */ = {isa = PBXBuildFile; productRef = D7DEFCC525FBF52F003CC631 /* Mapbox */; };
 		FD137E021E08E259005C1849 /* styles in Resources */ = {isa = PBXBuildFile; fileRef = FD137E011E08E259005C1849 /* styles */; };
@@ -71,6 +72,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D76C6E0126448F7600BFF6C9 /* MetalANGLE in Frameworks */,
 				D7DEFCC625FBF52F003CC631 /* Mapbox in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -170,6 +172,7 @@
 			name = GeographyClass;
 			packageProductDependencies = (
 				D7DEFCC525FBF52F003CC631 /* Mapbox */,
+				D76C6E0026448F7600BFF6C9 /* MetalANGLE */,
 			);
 			productName = OSM2VectorTiles;
 			productReference = 4C5BF3151C84DDF5000EE0E1 /* GeographyClass.app */;
@@ -564,13 +567,18 @@
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/maplibre/maplibre-gl-native-distribution.git";
 			requirement = {
-				kind = upToNextMajorVersion;
-				minimumVersion = 5.11.0;
+				kind = exactVersion;
+				version = "5.12.0-pre.1";
 			};
 		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
+		D76C6E0026448F7600BFF6C9 /* MetalANGLE */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = D7DEFCC425FBF52F003CC631 /* XCRemoteSwiftPackageReference "maplibre-gl-native-distribution" */;
+			productName = MetalANGLE;
+		};
 		D7DEFCC525FBF52F003CC631 /* Mapbox */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = D7DEFCC425FBF52F003CC631 /* XCRemoteSwiftPackageReference "maplibre-gl-native-distribution" */;

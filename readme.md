@@ -12,7 +12,7 @@ can be built to have local vector data, styles, glyphs and sprites.
 
 ## Build
 
-The [MapLibre Mobile SDK](https://github.com/maptiler/maplibre-gl-native-distribution) is installed via the [Swift Package Manager](https://developer.apple.com/documentation/swift_packages).
+The [MapLibre Mobile SDK](https://github.com/maplibre/maplibre-gl-native-distribution) is installed via the [Swift Package Manager](https://developer.apple.com/documentation/swift_packages).
 
 ### GitHub Actions
 
@@ -183,6 +183,8 @@ xed .
 
 ### Change Log
 
+* May 06, 2021
+  * Upgrade MapLibre for iOS to `5.12.0-pre.1`.  MetalANGLE build.
 * Mar 12, 2021
   * Upgrade MapLibre for iOS from `5.10.0` to `5.11.0`
 * Jan 30, 2021
