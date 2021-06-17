@@ -183,6 +183,8 @@ xed .
 
 ### Change Log
 
+* Jun 17, 2021
+  * Add MapView OSLog Extensions from https://github.com/roblabs/mapview-log-extensions
 * May 06, 2021
   * Upgrade MapLibre for iOS to `5.12.0-pre.1`.  MetalANGLE build.
 * Mar 12, 2021
