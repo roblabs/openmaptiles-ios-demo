@@ -17,6 +17,7 @@
 		D71B679B1C9C827300C6AA6A /* sprites in Resources */ = {isa = PBXBuildFile; fileRef = D71B67981C9C827300C6AA6A /* sprites */; };
 		D76C6E0126448F7600BFF6C9 /* MetalANGLE in Frameworks */ = {isa = PBXBuildFile; productRef = D76C6E0026448F7600BFF6C9 /* MetalANGLE */; };
 		D7AAD8CF2395EB1D002BA6A3 /* OSM2VectorTilesUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7AAD8CE2395EB1D002BA6A3 /* OSM2VectorTilesUITests.swift */; };
+		D7CB6B25267BB135007E9F1B /* MapView OSLog Extensions in Frameworks */ = {isa = PBXBuildFile; productRef = D7CB6B24267BB135007E9F1B /* MapView OSLog Extensions */; };
 		D7DEFCC625FBF52F003CC631 /* Mapbox in Frameworks */ = {isa = PBXBuildFile; productRef = D7DEFCC525FBF52F003CC631 /* Mapbox */; };
 		FD137E021E08E259005C1849 /* styles in Resources */ = {isa = PBXBuildFile; fileRef = FD137E011E08E259005C1849 /* styles */; };
 		FD137E041E08E67E005C1849 /* geography-class.osm2vectortiles in Resources */ = {isa = PBXBuildFile; fileRef = FD137E031E08E67E005C1849 /* geography-class.osm2vectortiles */; };
@@ -74,6 +75,7 @@
 			files = (
 				D76C6E0126448F7600BFF6C9 /* MetalANGLE in Frameworks */,
 				D7DEFCC625FBF52F003CC631 /* Mapbox in Frameworks */,
+				D7CB6B25267BB135007E9F1B /* MapView OSLog Extensions in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -173,6 +175,7 @@
 			packageProductDependencies = (
 				D7DEFCC525FBF52F003CC631 /* Mapbox */,
 				D76C6E0026448F7600BFF6C9 /* MetalANGLE */,
+				D7CB6B24267BB135007E9F1B /* MapView OSLog Extensions */,
 			);
 			productName = OSM2VectorTiles;
 			productReference = 4C5BF3151C84DDF5000EE0E1 /* GeographyClass.app */;
@@ -230,6 +233,7 @@
 			mainGroup = 4C5BF30C1C84DDF5000EE0E1;
 			packageReferences = (
 				D7DEFCC425FBF52F003CC631 /* XCRemoteSwiftPackageReference "maplibre-gl-native-distribution" */,
+				D7CB6B23267BB135007E9F1B /* XCRemoteSwiftPackageReference "mapview-log-extensions" */,
 			);
 			productRefGroup = 4C5BF3161C84DDF5000EE0E1 /* Products */;
 			projectDirPath = "";
@@ -563,6 +567,14 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
+		D7CB6B23267BB135007E9F1B /* XCRemoteSwiftPackageReference "mapview-log-extensions" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/roblabs/mapview-log-extensions.git";
+			requirement = {
+				branch = main;
+				kind = branch;
+			};
+		};
 		D7DEFCC425FBF52F003CC631 /* XCRemoteSwiftPackageReference "maplibre-gl-native-distribution" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/maplibre/maplibre-gl-native-distribution.git";
@@ -578,6 +590,11 @@
 			isa = XCSwiftPackageProductDependency;
 			package = D7DEFCC425FBF52F003CC631 /* XCRemoteSwiftPackageReference "maplibre-gl-native-distribution" */;
 			productName = MetalANGLE;
+		};
+		D7CB6B24267BB135007E9F1B /* MapView OSLog Extensions */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = D7CB6B23267BB135007E9F1B /* XCRemoteSwiftPackageReference "mapview-log-extensions" */;
+			productName = "MapView OSLog Extensions";
 		};
 		D7DEFCC525FBF52F003CC631 /* Mapbox */ = {
 			isa = XCSwiftPackageProductDependency;
