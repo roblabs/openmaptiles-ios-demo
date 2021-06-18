@@ -9,8 +9,12 @@ struct MapboxView: UIViewRepresentable {
     
     // MARK: - Configuring UIViewRepresentable protocol
     
+    init() {
+        OSLog.mapView(.event, "🎬 MapView init()")
+    }
+    
     func makeUIView(context: Context) -> MGLMapView {
-        OSLog.mapView(.event, "frame: \(mapView.frame)")
+        OSLog.mapView(.event, "🖼 frame: \(mapView.frame)")
         mapView.delegate = context.coordinator
         mapView.logoView.isHidden = true
         return mapView
@@ -19,7 +23,7 @@ struct MapboxView: UIViewRepresentable {
     func updateUIView(_ uiView: MGLMapView, context: Context) {
         let localStyle = "asset://styles/geography-class-local.json"
         let _ = setStyle(localStyle)
-        OSLog.mapView(.event, "style: \(mapView.styleURL)")
+        OSLog.mapView(.event, "🗺 style: \(String(describing: mapView.styleURL!))")
     }
     
     func makeCoordinator() -> MapboxView.Coordinator {
@@ -51,38 +55,38 @@ struct MapboxView: UIViewRepresentable {
         var control: MapboxView
         
         init(_ control: MapboxView) {
-            OSLog.mapView(.event, "Coordinator init")
+            OSLog.mapView(.event, OSLog.mapEvents.initDelegate.description)
             self.control = control
         }
 
         /// Log events 🦮100. WillStartLoadingMap
         func mapViewWillStartLoadingMap(_ mapView: MGLMapView) {
-            OSLog.mapView(.event, OSLog.mapEvents.WillStartLoadingMap.rawValue)
+            OSLog.mapView(.event, OSLog.mapEvents.WillStartLoadingMap.description)
         }
 
         /// Log events 🦮1. WillStartRenderingMap
         func mapViewWillStartRenderingMap(_ mapView: MGLMapView) {
-            OSLog.mapView(.event, OSLog.mapEvents.WillStartRenderingMap.rawValue)
+            OSLog.mapView(.event, OSLog.mapEvents.WillStartRenderingMap.description)
         }
 
         /// Log events 🦮2. DidFinishLoadingStyle
         func mapView(_ mapView: MGLMapView, didFinishLoading style: MGLStyle) {
-            OSLog.mapView(.event, OSLog.mapEvents.DidFinishLoadingStyle.rawValue)
+            OSLog.mapView(.event, OSLog.mapEvents.DidFinishLoadingStyle.description)
         }
         
         /// Log events 🦮3. DidFinishRenderingMap
         func mapViewDidFinishRenderingMap(_ mapView: MGLMapView, fullyRendered: Bool) {
-            OSLog.mapView(.event, OSLog.mapEvents.DidFinishRenderingMap.rawValue)
+            OSLog.mapView(.event, OSLog.mapEvents.DidFinishRenderingMap.description)
         }
 
         /// Log events 🦮4. DidFinishLoadingMap
         func mapViewDidFinishLoadingMap(_ mapView: MGLMapView) {
-            OSLog.mapView(.event, OSLog.mapEvents.DidFinishLoadingMap.rawValue)
+            OSLog.mapView(.event, OSLog.mapEvents.DidFinishLoadingMap.description)
         }
         
         /// Log events 🦮5. DidBecomeIdle
         func mapViewDidBecomeIdle(_ mapView: MGLMapView) {
-            OSLog.mapView(.event, OSLog.mapEvents.DidBecomeIdle.rawValue)
+            OSLog.mapView(.event, OSLog.mapEvents.DidBecomeIdle.description)
         }
         
         func mapView(_ mapView: MGLMapView, viewFor annotation: MGLAnnotation) -> MGLAnnotationView? {
