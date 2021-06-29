@@ -183,6 +183,9 @@ xed .
 
 ### Change Log
 
+* Jun 29, 2021
+  * Upgrade MapLibre for iOS from `5.11.0` to `5.12.0`
+  * See https://github.com/roblabs/openmaptiles-ios-demo/tree/5.12.0
 * Jun 17, 2021
   * Add MapView OSLog Extensions from https://github.com/roblabs/mapview-log-extensions
 * May 06, 2021

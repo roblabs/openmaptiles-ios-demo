@@ -1,11 +1,8 @@
 {
   "version": 8,
   "name": "Geography Class",
-  "center": [
-    0,
-    0
-  ],
-  "zoom": 0,
+  "center": [-115.746, 33.866],
+  "zoom": 5,
   "sources": {
     "countries": {
       "type": "vector",

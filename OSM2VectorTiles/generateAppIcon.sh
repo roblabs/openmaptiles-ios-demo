@@ -10,7 +10,7 @@
 # Source icon should 1024x1024 and be called Icon.png. If the icon changes, you can just run this again to regenerate everything.
 # This script assumes that you have the default setup of an Images.xcassets file containing the Icon.Iconset.
 # Adjust iconPath below if you use something different
-sourceIconName="512x512.png"
+sourceIconName="App-Store-1024x1024.png"
 
 # Ensure we're running in location of script.
 #cd "`dirname $0`"
@@ -26,113 +26,160 @@ mkdir -p "$iconPath"
 # clean it out
 rm -rf $iconPath/*.png
 
-# iPhone and iPad iOS7+ Sizes
-convert $sourceIconName -resize 120x120 $iconPath/Icon-60@2x.png
-convert $sourceIconName -resize 180x180 $iconPath/Icon-60@3x.png
-convert $sourceIconName -resize 76x76 $iconPath/Icon-76.png
-convert $sourceIconName -resize 152x152 $iconPath/Icon-76@2x.png
-convert $sourceIconName -resize 40x40 $iconPath/Icon-40.png
-convert $sourceIconName -resize 80x80 $iconPath/Icon-40@2x.png
-convert $sourceIconName -resize 120x120 $iconPath/Icon-40@3x.png
-convert $sourceIconName -resize 29x29 $iconPath/Icon-Small.png
-convert $sourceIconName -resize 58x58 $iconPath/Icon-Small@2x.png
-convert $sourceIconName -resize 87x87 $iconPath/Icon-Small@3x.png
-convert $sourceIconName -resize 167x167 $iconPath/Icon-83.5@2x.png
+# iOS 7-14
+# iPhone-Notification
+convert $sourceIconName -resize 40x40 $iconPath/iPhone-Notification-20@2x.png
+convert $sourceIconName -resize 60x60 $iconPath/iPhone-Notification-20@3x.png
+
+# iPhone
+convert $sourceIconName -resize 58x58 $iconPath/iPhone-29@2x.png
+convert $sourceIconName -resize 87x87 $iconPath/iPhone-29@3x.png
+
+# iPhone Spotlight
+convert $sourceIconName -resize  80x80  $iconPath/iPhone-Spotlight-40@2x.png
+convert $sourceIconName -resize 120x120 $iconPath/iPhone-Spotlight-40@3x.png
+
+# iPhone App
+convert $sourceIconName -resize 120x120 $iconPath/iPhone-App-60@2x.png
+convert $sourceIconName -resize 180x180 $iconPath/iPhone-App-60@3x.png
+
+# iPad Notifications
+convert $sourceIconName -resize 20x20 $iconPath/iPad-Notification-20@1x.png
+convert $sourceIconName -resize 40x40 $iconPath/iPad-Notification-20@2x.png
+
+# iPad Settings
+convert $sourceIconName -resize 29x29 $iconPath/iPad-Settings-29@1x.png
+convert $sourceIconName -resize 58x58 $iconPath/iPad-Settings-29@2x.png
+
+# iPad Spotlight
+convert $sourceIconName -resize 40x40 $iconPath/iPad-Spotlight-40@1x.png
+convert $sourceIconName -resize 80x80 $iconPath/iPad-Spotlight-40@2x.png
+
+# iPad App
+convert $sourceIconName -resize  76x76  $iconPath/iPad-Spotlight-76@1x.png
+convert $sourceIconName -resize 152x152 $iconPath/iPad-Spotlight-76@2x.png
+
+# iPad Pro
+convert $sourceIconName -resize 167x167 $iconPath/iPad Pro-83.5@2x.png
+
+# App Store
+# Use the 1024x1024.png
 
 cat > "$iconPath/Contents.json" << EOF
 {
   "images" : [
     {
+      "filename" : "iPhone-Notification-20@2x.png",
       "idiom" : "iphone",
       "scale" : "2x",
-      "size" : "60x60"
-	   ,"filename" : "Icon-60@2x.png"
+      "size" : "20x20"
     },
     {
+      "filename" : "iPhone-Notification-20@3x.png",
       "idiom" : "iphone",
       "scale" : "3x",
-      "size" : "60x60"
-       ,"filename" : "Icon-60@3x.png"
+      "size" : "20x20"
     },
     {
-      "idiom" : "ipad",
-      "scale" : "1x",
-      "size" : "76x76"
-      ,"filename" : "Icon-76.png"
-    },
-    {
-      "idiom" : "ipad",
-      "scale" : "2x",
-      "size" : "76x76"
-      ,"filename" : "Icon-76@2x.png"
-    },
-    {
-      "idiom" : "iphone",
-      "scale" : "1x",
-      "size" : "29x29"
-      ,"filename" : "Icon-Small.png"
-    },
-    {
+      "filename" : "iPhone-29@2x.png",
       "idiom" : "iphone",
       "scale" : "2x",
       "size" : "29x29"
-      ,"filename" : "Icon-Small@2x.png"
     },
     {
+      "filename" : "iPhone-29@3x.png",
       "idiom" : "iphone",
       "scale" : "3x",
       "size" : "29x29"
-      ,"filename" : "Icon-Small@3x.png"
     },
     {
+      "filename" : "iPhone-Spotlight-40@2x.png",
+      "idiom" : "iphone",
+      "scale" : "2x",
+      "size" : "40x40"
+    },
+    {
+      "filename" : "iPhone-Spotlight-40@3x.png",
+      "idiom" : "iphone",
+      "scale" : "3x",
+      "size" : "40x40"
+    },
+    {
+      "filename" : "iPhone-App-60@2x.png",
+      "idiom" : "iphone",
+      "scale" : "2x",
+      "size" : "60x60"
+    },
+    {
+      "filename" : "iPhone-App-60@3x.png",
+      "idiom" : "iphone",
+      "scale" : "3x",
+      "size" : "60x60"
+    },
+    {
+      "filename" : "iPad-Notification-20@1x.png",
+      "idiom" : "ipad",
+      "scale" : "1x",
+      "size" : "20x20"
+    },
+    {
+      "filename" : "iPad-Notification-20@2x.png",
+      "idiom" : "ipad",
+      "scale" : "2x",
+      "size" : "20x20"
+    },
+    {
+      "filename" : "iPad-Settings-29@1x.png",
+      "idiom" : "ipad",
+      "scale" : "1x",
+      "size" : "29x29"
+    },
+    {
+      "filename" : "iPad-Settings-29@2x.png",
+      "idiom" : "ipad",
+      "scale" : "2x",
+      "size" : "29x29"
+    },
+    {
+      "filename" : "iPad-Spotlight-40@1x.png",
+      "idiom" : "ipad",
+      "scale" : "1x",
+      "size" : "40x40"
+    },
+    {
+      "filename" : "iPad-Spotlight-40@2x.png",
+      "idiom" : "ipad",
+      "scale" : "2x",
+      "size" : "40x40"
+    },
+    {
+      "filename" : "iPad-Spotlight-76@1x.png",
+      "idiom" : "ipad",
+      "scale" : "1x",
+      "size" : "76x76"
+    },
+    {
+      "filename" : "iPad-Spotlight-76@2x.png",
+      "idiom" : "ipad",
+      "scale" : "2x",
+      "size" : "76x76"
+    },
+    {
+      "filename" : "iPad-Pro-83.5@2x.png",
       "idiom" : "ipad",
       "scale" : "2x",
       "size" : "83.5x83.5"
-      ,"filename" : "Icon-83.5@2x.png"
     },
     {
-      "idiom" : "iphone",
-      "scale" : "2x",
-      "size" : "40x40"
-      ,"filename" : "Icon-40@2x.png"
-    },
-    {
-      "idiom" : "iphone",
-      "scale" : "3x",
-      "size" : "40x40"
-      ,"filename" : "Icon-40@3x.png"
-    },
-    {
-      "idiom" : "ipad",
+      "filename" : "App-Store-1024x1024.png",
+      "idiom" : "ios-marketing",
       "scale" : "1x",
-      "size" : "40x40"
-      ,"filename" : "Icon-40.png"
-    },
-    {
-      "idiom" : "ipad",
-      "scale" : "2x",
-      "size" : "40x40"
-      ,"filename" : "Icon-40@2x.png"
-    },
-    {
-      "idiom" : "ipad",
-      "scale" : "1x",
-      "size" : "29x29"
-      ,"filename" : "Icon-Small.png"
-    },
-    {
-      "idiom" : "ipad",
-      "scale" : "2x",
-      "size" : "29x29"
-      ,"filename" : "Icon-Small@2x.png"
+      "size" : "1024x1024"
     }
   ],
   "info" : {
-    "version" : 1,
-    "author" : "xcode"
-  },
-  "properties" : {
-    "pre-rendered" : true
+    "author" : "xcode",
+    "version" : 1
   }
 }
 EOF
