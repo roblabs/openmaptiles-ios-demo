@@ -21,7 +21,12 @@ struct MapboxView: UIViewRepresentable {
     }
     
     func updateUIView(_ uiView: MGLMapView, context: Context) {
-        let localStyle = "asset://styles/geography-class-local.json"
+        var localStyle = "asset://styles/geography-class.GitHub.json"
+//        localStyle = "https://raw.githubusercontent.com/roblabs/openmaptiles-ios-demo/master/OSM2VectorTiles/styles/geography-class.GitHub.json"
+//        localStyle = "https://raw.githubusercontent.com/roblabs/xyz-raster-sources/master/styles/naturalearthtiles.json"
+//        localStyle = "https://raw.githubusercontent.com/roblabs/xyz-raster-sources/master/styles/tileservice-charts-noaa-gov.json"
+//        localStyle = "https://raw.githubusercontent.com/roblabs/xyz-raster-sources/master/styles/arcgis-world-imagery.json"
+//        localStyle = "https://raw.githubusercontent.com/roblabs/xyz-raster-sources/master/styles/stamen-multi-rasters.json"
         let _ = setStyle(localStyle)
         OSLog.mapView(.event, "🗺 style: \(String(describing: mapView.styleURL!))")
     }
