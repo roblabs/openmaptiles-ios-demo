@@ -27,6 +27,7 @@ struct MapboxView: UIViewRepresentable {
 //        localStyle = "https://raw.githubusercontent.com/roblabs/xyz-raster-sources/master/styles/tileservice-charts-noaa-gov.json"
 //        localStyle = "https://raw.githubusercontent.com/roblabs/xyz-raster-sources/master/styles/arcgis-world-imagery.json"
 //        localStyle = "https://raw.githubusercontent.com/roblabs/xyz-raster-sources/master/styles/stamen-multi-rasters.json"
+//        localStyle = "https://demotiles.maplibre.org/style.json"
         let _ = setStyle(localStyle)
         OSLog.mapView(.event, "🗺 style: \(String(describing: mapView.styleURL!))")
     }
