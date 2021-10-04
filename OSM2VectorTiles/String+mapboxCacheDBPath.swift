@@ -7,6 +7,13 @@
 
 import Foundation
 
+/// Usage
+/**
+ ```
+print("# Use this log output to open the folder to `cache.db` in macOS Finder")
+print("  open \"\(NSHomeDirectory().mapboxCacheDBPath)\"")
+```
+ */
 extension String {
 
     /// Returns the path to either the user’s or application’s home directory
@@ -15,7 +22,7 @@ extension String {
     /// Application Path & Bundle Identifier
     static let APPLICATION_SUPPORT_PATH = "/Library/Application Support/\(Bundle.main.bundleIdentifier ?? "bundleIdentifier")"
     
-    /// Hidden folder  of path to `cache.db`
+    /// Hidden folder of path to `cache.db`
     static let CACHE_DB_PATH = "/.mapbox"
 
     /// String extension to print out path information to the Mapbox `cache.db`.

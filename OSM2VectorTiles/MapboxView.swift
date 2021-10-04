@@ -17,6 +17,12 @@ struct MapboxView: UIViewRepresentable {
         OSLog.mapView(.event, "🖼 frame: \(mapView.frame)")
         mapView.delegate = context.coordinator
         mapView.logoView.isHidden = true
+        mapView.debugMask = [MGLMapDebugMaskOptions.tileBoundariesMask, MGLMapDebugMaskOptions.tileInfoMask]
+        
+        print("# Use this log output to open the folder to `cache.db` in macOS Finder")
+        print("  open \"\(NSHomeDirectory().mapboxCacheDBPath)\"")
+        print("")
+
         return mapView
     }
     
