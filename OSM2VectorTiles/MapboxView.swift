@@ -19,12 +19,12 @@ struct MapboxView: UIViewRepresentable {
     /// - parameter styleURL
     func setStyle(_ styleURL: String) -> MapboxView {
         // Create a URL for a custom style created in Mapbox Studio.
-        guard let customStyleURI = StyleURI(rawValue: "mapbox://styles/examples/cke97f49z5rlg19l310b7uu7j") else {
+        guard let customStyleURI = StyleURI(rawValue: styleURL) else {
             fatalError("Style URI is invalid")
         }
         
-        let options = MapInitOptions(styleURI: customStyleURI)
- 
+        mapView.mapboxMap.style.uri = customStyleURI
+        
         return self
     }
     
