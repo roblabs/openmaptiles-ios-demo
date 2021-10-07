@@ -5,7 +5,7 @@ struct ContentView: View {
     var body: some View {
         MapboxView()
             .centerCoordinate(
-                .init(latitude: 33.0, longitude: -116.0)).zoomLevel(1)
+                .init(latitude: 33.0, longitude: -116.0)).zoomLevel(7)
     }
 }
 
