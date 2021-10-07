@@ -17,6 +17,7 @@
 		D71B679B1C9C827300C6AA6A /* sprites in Resources */ = {isa = PBXBuildFile; fileRef = D71B67981C9C827300C6AA6A /* sprites */; };
 		D78A88D925C6493100B1AE69 /* MapboxMaps in Frameworks */ = {isa = PBXBuildFile; productRef = D78A88D825C6493100B1AE69 /* MapboxMaps */; };
 		D7AAD8CF2395EB1D002BA6A3 /* OSM2VectorTilesUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7AAD8CE2395EB1D002BA6A3 /* OSM2VectorTilesUITests.swift */; };
+		D7CE1B0C270FA4BA004D7CC5 /* String+mapboxCacheDBPath.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7CE1B0B270FA4BA004D7CC5 /* String+mapboxCacheDBPath.swift */; };
 		FD137E021E08E259005C1849 /* styles in Resources */ = {isa = PBXBuildFile; fileRef = FD137E011E08E259005C1849 /* styles */; };
 		FD137E041E08E67E005C1849 /* geography-class.osm2vectortiles in Resources */ = {isa = PBXBuildFile; fileRef = FD137E031E08E67E005C1849 /* geography-class.osm2vectortiles */; };
 /* End PBXBuildFile section */
@@ -60,6 +61,7 @@
 		D7AAD8CE2395EB1D002BA6A3 /* OSM2VectorTilesUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OSM2VectorTilesUITests.swift; sourceTree = "<group>"; };
 		D7AAD8D02395EB1D002BA6A3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D7CC50CD2486E0610001AA89 /* Mapbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Mapbox.framework; path = Carthage/Build/iOS/Mapbox.framework; sourceTree = "<group>"; };
+		D7CE1B0B270FA4BA004D7CC5 /* String+mapboxCacheDBPath.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "String+mapboxCacheDBPath.swift"; sourceTree = "<group>"; };
 		D7FD07362486E5F000738B0A /* OSM2VectorTiles.xctestplan */ = {isa = PBXFileReference; lastKnownFileType = text; path = OSM2VectorTiles.xctestplan; sourceTree = "<group>"; };
 		FD137E011E08E259005C1849 /* styles */ = {isa = PBXFileReference; lastKnownFileType = folder; path = styles; sourceTree = "<group>"; };
 		FD137E031E08E67E005C1849 /* geography-class.osm2vectortiles */ = {isa = PBXFileReference; lastKnownFileType = folder; path = "geography-class.osm2vectortiles"; sourceTree = "<group>"; };
@@ -121,6 +123,7 @@
 				D717E7E125C63711004C4F31 /* ContentView.swift */,
 				D717E7E325C63711004C4F31 /* MapboxView.swift */,
 				D717E7E225C63711004C4F31 /* SceneDelegate.swift */,
+				D7CE1B0B270FA4BA004D7CC5 /* String+mapboxCacheDBPath.swift */,
 				4C5BF31F1C84DDF5000EE0E1 /* Assets.xcassets */,
 				4C5BF3241C84DDF5000EE0E1 /* Info.plist */,
 				4C5BF3211C84DDF5000EE0E1 /* LaunchScreen.storyboard */,
@@ -266,6 +269,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D7CE1B0C270FA4BA004D7CC5 /* String+mapboxCacheDBPath.swift in Sources */,
 				D717E7E825C63711004C4F31 /* AppDelegate.swift in Sources */,
 				D717E7E525C63711004C4F31 /* ContentView.swift in Sources */,
 				D717E7E725C63711004C4F31 /* MapboxView.swift in Sources */,

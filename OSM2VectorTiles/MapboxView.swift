@@ -7,6 +7,8 @@ struct MapboxView: UIViewRepresentable {
     var mapView = MapView(frame: .zero, mapInitOptions: MapInitOptions(resourceOptions: ResourceOptions(accessToken: "pk.accessToken")))
     
     func makeUIView(context: Context) -> MapView {
+        print("# Use this log output to open the folder to `cache.db` in macOS Finder")
+        print("  open \"\(NSHomeDirectory().mapboxCacheDBPath)\"")
         return mapView
     }
     
