@@ -6,7 +6,7 @@ struct ContentView: View {
         MapboxView()
             .centerCoordinate(
             .init(latitude: 33.0, longitude: -116.0)).zoomLevel(7)
-            .setStyle("mapbox://styles/examples/cke97f49z5rlg19l310b7uu7j")
+            .setStyle("asset://styles/geography-class-local.json")
 
 /** Token Free Styles
             .setStyle("https://raw.githubusercontent.com/roblabs/openmaptiles-ios-demo/master/OSM2VectorTiles/styles/geography-class.GitHub.json")
@@ -18,6 +18,10 @@ struct ContentView: View {
  */
         
 /** Mapbox styles to use
+ 
+            /// Mabpox example
+           .setStyle("mapbox://styles/examples/cke97f49z5rlg19l310b7uu7j")
+ 
             /// Mapbox Streets is a general-purpose style with detailed road and transit networks.
             .setStyle("mapbox://styles/mapbox/streets-v11")
 
