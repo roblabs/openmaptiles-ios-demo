@@ -1,3 +1,0 @@
-[submodule "xcode-continuous-integration"]
-	path = xcode-continuous-integration
-	url = https://github.com/roblabs/xcode-continuous-integration.git
