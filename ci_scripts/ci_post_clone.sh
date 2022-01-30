@@ -28,4 +28,6 @@ sqlite3 -version
 unzip -version
 
 # MARK: XCS — Xcode Server Bots 🤖
-bash $PROJECT_DIR/ci_scripts/XCS_environment.sh
+if [ ${XCS} ]; then
+    bash $PROJECT_DIR/ci_scripts/XCS_environment.sh
+fi
