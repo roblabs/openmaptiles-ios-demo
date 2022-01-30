@@ -5,7 +5,7 @@ import MapViewOSLogExtensions
 
 struct MapboxView: UIViewRepresentable {
     var oslog = OSLog(subsystem: OSLog.subsystemMapview, category: OSLog.categoryMapview)
-    private let mapView: MGLMapView = MGLMapView(frame: .zero, styleURL: MGLStyle.streetsStyleURL)
+    private let mapView: MGLMapView = MGLMapView(frame: .zero)
     
     // MARK: - Configuring UIViewRepresentable protocol
     
