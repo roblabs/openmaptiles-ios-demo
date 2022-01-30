@@ -5,6 +5,13 @@
 # The post-clone script runs after Xcode Cloud clones your Git repository
 echo This log was generated at $(date) from: ci_post_clone.sh
 
+echo "# Fetching Mapbox Maps v10 🗺"
+touch ~/.netrc
+echo "machine api.mapbox.com" > ~/.netrc
+echo "login mapbox" >> ~/.netrc
+echo "password ${MAPBOX_TOKEN}" >> ~/.netrc
+ls -l ~/.netrc
+
 echo "# curl 🥌, either a Zip 🤐 or MBTiles 🗺"
 export INPUT_ZIP_OR_MBTILES=""
 export OUTPUT__ZIP_OR_MBTILES=""
