@@ -59,10 +59,14 @@
 		D71B67971C9C827300C6AA6A /* glyphs */ = {isa = PBXFileReference; lastKnownFileType = folder; path = glyphs; sourceTree = "<group>"; };
 		D71B67981C9C827300C6AA6A /* sprites */ = {isa = PBXFileReference; lastKnownFileType = folder; path = sprites; sourceTree = "<group>"; };
 		D71B67A41CA0946700C6AA6A /* geography-class.mbtiles */ = {isa = PBXFileReference; lastKnownFileType = file; path = "geography-class.mbtiles"; sourceTree = "<group>"; };
-		D747128F270B5523009220D6 /* String+mapboxCacheDBPath.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "String+mapboxCacheDBPath.swift"; path = "OSM2VectorTiles/String+mapboxCacheDBPath.swift"; sourceTree = "<group>"; };
+		D747128F270B5523009220D6 /* String+mapboxCacheDBPath.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+mapboxCacheDBPath.swift"; sourceTree = "<group>"; };
 		D7AAD8CC2395EB1D002BA6A3 /* OSM2VectorTilesUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = OSM2VectorTilesUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D7AAD8CE2395EB1D002BA6A3 /* OSM2VectorTilesUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OSM2VectorTilesUITests.swift; sourceTree = "<group>"; };
 		D7AAD8D02395EB1D002BA6A3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D7B3381827A71EC800092598 /* ci_post_xcodebuild.sh */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; path = ci_post_xcodebuild.sh; sourceTree = "<group>"; };
+		D7B3381927A71EC800092598 /* ci_pre_xcodebuild.sh */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; path = ci_pre_xcodebuild.sh; sourceTree = "<group>"; };
+		D7B3381A27A71EC800092598 /* ci_post_clone.sh */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; path = ci_post_clone.sh; sourceTree = "<group>"; };
+		D7B3381B27A72DBD00092598 /* XCS_environment.sh */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; path = XCS_environment.sh; sourceTree = "<group>"; };
 		D7CC50CD2486E0610001AA89 /* Mapbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Mapbox.framework; path = Carthage/Build/iOS/Mapbox.framework; sourceTree = "<group>"; };
 		D7FD07362486E5F000738B0A /* OSM2VectorTiles.xctestplan */ = {isa = PBXFileReference; lastKnownFileType = text; path = OSM2VectorTiles.xctestplan; sourceTree = "<group>"; };
 		FD137E011E08E259005C1849 /* styles */ = {isa = PBXFileReference; lastKnownFileType = folder; path = styles; sourceTree = "<group>"; };
@@ -102,8 +106,8 @@
 		4C5BF30C1C84DDF5000EE0E1 = {
 			isa = PBXGroup;
 			children = (
-				D747128F270B5523009220D6 /* String+mapboxCacheDBPath.swift */,
 				FD184C7E1E3FBAEE007CC408 /* readme.md */,
+				D7B3381727A71EC800092598 /* ci_scripts */,
 				D71B67A11CA08A0A00C6AA6A /* Resources */,
 				4C5BF3171C84DDF5000EE0E1 /* OSM2VectorTiles */,
 				D7AAD8CD2395EB1D002BA6A3 /* OSM2VectorTilesUITests */,
@@ -124,6 +128,7 @@
 		4C5BF3171C84DDF5000EE0E1 /* OSM2VectorTiles */ = {
 			isa = PBXGroup;
 			children = (
+				D747128F270B5523009220D6 /* String+mapboxCacheDBPath.swift */,
 				D717E7E425C63711004C4F31 /* AppDelegate.swift */,
 				D717E7E125C63711004C4F31 /* ContentView.swift */,
 				D717E7E325C63711004C4F31 /* MapboxView.swift */,
@@ -156,6 +161,17 @@
 				D7AAD8D02395EB1D002BA6A3 /* Info.plist */,
 			);
 			path = OSM2VectorTilesUITests;
+			sourceTree = "<group>";
+		};
+		D7B3381727A71EC800092598 /* ci_scripts */ = {
+			isa = PBXGroup;
+			children = (
+				D7B3381A27A71EC800092598 /* ci_post_clone.sh */,
+				D7B3381927A71EC800092598 /* ci_pre_xcodebuild.sh */,
+				D7B3381827A71EC800092598 /* ci_post_xcodebuild.sh */,
+				D7B3381B27A72DBD00092598 /* XCS_environment.sh */,
+			);
+			path = ci_scripts;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */

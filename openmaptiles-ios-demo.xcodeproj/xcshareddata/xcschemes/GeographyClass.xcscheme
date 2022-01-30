@@ -9,8 +9,9 @@
          <ExecutionAction
             ActionType = "Xcode.IDEStandardExecutionActionsCore.ExecutionActionType.ShellScriptAction">
             <ActionContent
-               title = "Run Script"
-               scriptText = "&#10;">
+               title = "Run Script: ci_post_clone &amp; ci_pre_xcodebuild"
+               scriptText = "echo &quot;&#x1f5c4; PROJECT_DIR=$PROJECT_DIR&quot;&#10;bash $PROJECT_DIR/ci_scripts/ci_post_clone.sh&#10;bash $PROJECT_DIR/ci_scripts/ci_pre_xcodebuild.sh&#10;"
+               shellToInvoke = "/bin/bash">
                <EnvironmentBuildable>
                   <BuildableReference
                      BuildableIdentifier = "primary"
@@ -23,6 +24,15 @@
             </ActionContent>
          </ExecutionAction>
       </PreActions>
+      <PostActions>
+         <ExecutionAction
+            ActionType = "Xcode.IDEStandardExecutionActionsCore.ExecutionActionType.ShellScriptAction">
+            <ActionContent
+               title = "Run Script: ci_post_xcodebuild"
+               scriptText = "echo &quot;&#x1f5c4; PROJECT_DIR=$PROJECT_DIR&quot;&#10;echo &quot;&#x1f5c4; WORKSPACE_PATH=$WORKSPACE_PATH&quot;&#10;bash $WORKSPACE_PATH/../../ci_scripts/ci_post_xcodebuild.sh&#10;">
+            </ActionContent>
+         </ExecutionAction>
+      </PostActions>
       <BuildActionEntries>
          <BuildActionEntry
             buildForTesting = "YES"
