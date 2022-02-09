@@ -5,4 +5,4 @@
 # The pre-xcodebuild script runs before Xcode Cloud runs the xcodebuild command. 
 echo This log was generated at $(date) from: ci_pre_xcodebuild.sh
 
-echo "# 🧱 pre xcodebuild"
+echo "# 🧱 ci_pre_xcodebuild.sh"
