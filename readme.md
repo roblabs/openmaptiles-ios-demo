@@ -120,7 +120,7 @@ tsgl  # starts Tileserver GL using the file config.json
 
 Using the Zurich Sample from Maptiler.  
 
-See the [`metadata`](tileserver-gl/config.zurich.json) for details on
+See the [`metadata`](OSM2VectorTiles/tileserver-gl/config.zurich.json) for details on
 * how to run Tileserver-GL using `docker` or `npm`.
 * How to fetch the Zurich MBTiles
 
@@ -133,7 +133,7 @@ See the [`metadata`](tileserver-gl/config.zurich.json) for details on
   * Fonts or Glyphs used in the style (not the fonts used by Mapbox) — [http://localhost:8081/fonts.json](http://localhost:8081/fonts.json)
 
 ```
-tsgl --config tileserver-gl/config.zurich.json
+tsgl --config OSM2VectorTiles/tileserver-gl/config.zurich.json
 ```
 
 #### Geography Class
